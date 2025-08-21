@@ -1,0 +1,406 @@
+# bot.py
+# Kiripto Nova — Futures Bracket Bot (TESTNET/MAINNET, PRO/STRICT destekli)
+# ------------------------------------------------------------
+# - python-binance + dotenv
+# - HEDGE/ISOLATED/LEVERAGE idempotent ayarlama
+# - MARKET entry + STOP_MARKET (SL) + TAKE_PROFIT_MARKET (TP)
+# - SL/TP için reduceOnly KULLANMA → closePosition=True (Binance USDM gereği)
+# - Opsiyonel TRAILING_STOP_MARKET (qty ile, reduceOnly yok)
+# - Timestamp senkronu (client.timestamp_offset)
+# - Sağlam retry + min step/tick yuvarlama
+# - PRO otomatik mod (çok basit sinyal örneği) + STRICT (korumacı mod)
+# ------------------------------------------------------------
+
+from __future__ import annotations
+
+import os
+import sys
+import time
+import math
+import argparse
+from decimal import Decimal, ROUND_DOWN
+from typing import Dict, Any, Optional, Tuple
+
+from dotenv import load_dotenv
+from binance.client import Client
+from binance.exceptions import BinanceAPIException
+
+# Opsiyonel Telegram bildirimleri
+try:
+    import notify as nt  # notify.py varsa send() kullanır
+except Exception:
+    nt = None
+
+# =======================
+# Ortam / Config
+# =======================
+
+load_dotenv()
+
+USE_TESTNET = os.getenv("BINANCE_USE_TESTNET", "true").strip().lower() == "true"
+
+if USE_TESTNET:
+    API_KEY = (os.getenv("BINANCE_API_KEY_TEST") or "").strip()
+    API_SECRET = (os.getenv("BINANCE_API_SECRET_TEST") or "").strip()
+    FUTURES_BASE = os.getenv("BINANCE_FUTURES_URL_TEST", "https://testnet.binancefuture.com").strip().rstrip("/")
+else:
+    API_KEY = (os.getenv("BINANCE_API_KEY_MAIN") or os.getenv("BINANCE_API_KEY") or "").strip()
+    API_SECRET = (os.getenv("BINANCE_API_SECRET_MAIN") or os.getenv("BINANCE_API_SECRET") or "").strip()
+    FUTURES_BASE = os.getenv("BINANCE_FUTURES_URL_MAIN", "https://fapi.binance.com").strip().rstrip("/")
+
+if not API_KEY or not API_SECRET:
+    print("❌ API key/secret yok (.env).")
+    sys.exit(1)
+
+client = Client(API_KEY, API_SECRET, testnet=USE_TESTNET)
+client.FUTURES_URL = f"{FUTURES_BASE}/fapi"
+print("Futures base:", client.FUTURES_URL)
+print("API key (maskeli):", API_KEY[:6] + "..." + API_KEY[-4:])
+
+# Risk ve emir çalışma ayarları
+HEDGE_MODE  = os.getenv("BINANCE_HEDGE_MODE", "true").strip().lower() == "true"
+MARGIN_TYPE = os.getenv("BINANCE_MARGIN_TYPE", "ISOLATED").strip().upper()  # ISOLATED/CROSSED
+LEVERAGE    = int(os.getenv("BINANCE_LEVERAGE", "5"))
+
+WORKING_TYPE = os.getenv("WORKING_TYPE", "MARK_PRICE").strip().upper()  # MARK_PRICE | CONTRACT_PRICE
+SL_PCT_DEF   = float(os.getenv("SL_PCT", "0.01"))
+TP_PCT_DEF   = float(os.getenv("TP_PCT", "0.02"))
+TRAIL_PCT_DEF= float(os.getenv("TRAIL_PCT", "0.0"))   # 0.004 = %0.4
+
+STRICT_MODE  = os.getenv("STRICT_MODE", "false").strip().lower() == "true"
+
+MAX_RETRY        = int(os.getenv("MAX_RETRY", "3"))
+RETRY_BACKOFF_MS = int(os.getenv("RETRY_BACKOFF_MS", "400"))
+
+_symbol_cache: Dict[str, Dict[str, float]] = {}
+
+# =======================
+# Yardımcılar
+# =======================
+
+def tg(msg: str):
+    print(msg)
+    if nt and hasattr(nt, "tg_enabled") and nt.tg_enabled():
+        try:
+            nt.send(msg)
+        except Exception:
+            pass
+
+def _sleep_ms(ms: int):
+    time.sleep(ms / 1000.0)
+
+def retry_call(fn, desc: str = "", *args, **kwargs):
+    tries = kwargs.pop("_tries", MAX_RETRY)
+    last = None
+    for i in range(tries):
+        try:
+            return fn(*args, **kwargs)
+        except BinanceAPIException as e:
+            last = e
+            print(f"⚠️ {desc or fn.__name__} hata: {e} (deneme {i+1}/{tries})")
+            _sleep_ms(RETRY_BACKOFF_MS)
+        except Exception as e:
+            last = e
+            print(f"⚠️ {desc or fn.__name__} hata: {e} (deneme {i+1}/{tries})")
+            _sleep_ms(RETRY_BACKOFF_MS)
+    raise last
+
+def calibrate_timestamp_offset():
+    """Sunucu saatine göre client.timestamp_offset ayarla."""
+    try:
+        s = retry_call(client.get_server_time, "server_time")
+        server_ms = int(s["serverTime"])
+        local_ms  = int(time.time() * 1000)
+        off = server_ms - local_ms
+        client.timestamp_offset = off
+        print(f"⏱️ timestamp senkron: offset={off} ms, recvWindow={5000}")
+    except Exception as e:
+        print("⚠️ timestamp offset ayarlanamadı:", e)
+
+def get_filters(symbol: str) -> Dict[str, float]:
+    s = symbol.upper()
+    if s in _symbol_cache:
+        return _symbol_cache[s]
+    info = retry_call(client.futures_exchange_info, "exchange_info")
+    sy = next((x for x in info["symbols"] if x["symbol"] == s), None)
+    if not sy:
+        raise SystemExit(f"Sembol yok: {s}")
+    lot = next(x for x in sy["filters"] if x["filterType"] in ("LOT_SIZE", "MARKET_LOT_SIZE"))
+    prf = next(x for x in sy["filters"] if x["filterType"] == "PRICE_FILTER")
+    step = float(lot["stepSize"])
+    minq = float(lot["minQty"])
+    tick = float(prf["tickSize"])
+    _symbol_cache[s] = {"step": step, "min_qty": minq, "tick": tick}
+    return _symbol_cache[s]
+
+def _round_to_step(val: float, step: float) -> float:
+    dval = Decimal(str(val))
+    dstep = Decimal(str(step))
+    return float((dval / dstep).to_integral_value(rounding=ROUND_DOWN) * dstep)
+
+def round_qty(symbol: str, qty: float) -> float:
+    f = get_filters(symbol)
+    return _round_to_step(max(qty, f["min_qty"]), f["step"])
+
+def round_price(symbol: str, price: float) -> float:
+    f = get_filters(symbol)
+    return _round_to_step(price, f["tick"])
+
+def _position_side(side: str) -> str:
+    return "LONG" if side.upper() == "BUY" else "SHORT"
+
+def _opposite(side: str) -> str:
+    return "SELL" if side.upper() == "BUY" else "BUY"
+
+def _last_price(symbol: str) -> float:
+    t = retry_call(client.futures_symbol_ticker, "symbol_ticker", symbol=symbol)
+    return float(t["price"])
+
+# =======================
+# Hesap ayarları
+# =======================
+
+def apply_account_settings(symbol: str):
+    # 1) Hedge / Oneway
+    try:
+        mode = retry_call(client.futures_get_position_mode, "get_position_mode")
+        dual = mode and mode.get("dualSidePosition", False)
+        want = HEDGE_MODE
+        if dual != want:
+            retry_call(client.futures_change_position_mode, "change_position_mode",
+                       dualSidePosition=want)
+            print(f"⚙️ Position mode -> {'HEDGE' if want else 'ONE-WAY'}")
+        else:
+            print("ℹ️ Position mode zaten uygun (skip).")
+    except BinanceAPIException as e:
+        print("⚠️ position_mode:", e)
+
+    # 2) Margin type
+    try:
+        retry_call(client.futures_change_margin_type, "change_margin_type",
+                   symbol=symbol, marginType=MARGIN_TYPE)
+        print(f"⚙️ Margin type -> {MARGIN_TYPE}")
+    except BinanceAPIException as e:
+        if "No need to change margin type" in str(e) or e.code == -4046:
+            print("ℹ️ margin type zaten uygun (skip).")
+        else:
+            raise
+
+    # 3) Leverage
+    try:
+        retry_call(client.futures_change_leverage, "change_leverage",
+                   symbol=symbol, leverage=LEVERAGE)
+        print(f"⚙️ Leverage -> {LEVERAGE}x")
+    except BinanceAPIException as e:
+        print("ℹ️ leverage set yanıtı:", e)
+
+# =======================
+# Order helpers
+# =======================
+
+def safe_create_order(desc: str, **params) -> Any:
+    """None değerleri atarak create_order çağır; hataları tekrar dene."""
+    clean = {k: v for k, v in params.items() if v is not None}
+    return retry_call(client.futures_create_order, desc, **clean)
+
+def entry_market(symbol: str, side: str, qty: float, pos_side: str, shadow: bool) -> None:
+    p = dict(symbol=symbol, side=side, type="MARKET",
+             quantity=qty, positionSide=pos_side)
+    if shadow:
+        print("DRY-RUN MARKET:", p)
+        return
+    safe_create_order("create_market", **p)
+
+def stop_market_close(symbol: str, opp: str, stop_price: float, pos_side: str,
+                      working: str, shadow: bool) -> None:
+    # SL/TP: reduceOnly YOK, quantity YOK → closePosition=True
+    p = dict(symbol=symbol, side=opp, type="STOP_MARKET",
+             stopPrice=stop_price, workingType=working,
+             positionSide=pos_side, closePosition=True)
+    if shadow:
+        print("DRY-RUN SL:", p)
+        return
+    safe_create_order("create_stop(close)", **p)
+
+def take_profit_close(symbol: str, opp: str, stop_price: float, pos_side: str,
+                      working: str, shadow: bool) -> None:
+    p = dict(symbol=symbol, side=opp, type="TAKE_PROFIT_MARKET",
+             stopPrice=stop_price, workingType=working,
+             positionSide=pos_side, closePosition=True)
+    if shadow:
+        print("DRY-RUN TP:", p)
+        return
+    safe_create_order("create_takeprofit(close)", **p)
+
+def trailing_stop(symbol: str, opp: str, activation: float, callback_rate: float,
+                  pos_side: str, qty: float, shadow: bool) -> None:
+    # Trailing: closePosition desteklemez; qty + positionSide kullan.
+    p = dict(symbol=symbol, side=opp, type="TRAILING_STOP_MARKET",
+             activationPrice=activation, callbackRate=callback_rate,
+             positionSide=pos_side, quantity=qty)
+    if shadow:
+        print("DRY-RUN TRAIL:", p)
+        return
+    safe_create_order("create_trailing", **p)
+
+def _entry_price_after_fill(symbol: str, pos_side: str, tries: int = 6, delay_ms: int = 250) -> float:
+    ep = 0.0
+    for _ in range(tries):
+        pis = retry_call(client.futures_position_information, "position_info", symbol=symbol)
+        rec = next((p for p in pis if p.get("positionSide") == pos_side), None)
+        if rec:
+            ep = float(rec.get("entryPrice", 0.0))
+            if ep > 0:
+                break
+        _sleep_ms(delay_ms)
+    return ep or _last_price(symbol)
+
+# =======================
+# Bracket (ENTRY + SL/TP[/TRAIL])
+# =======================
+
+def bracket_market(symbol: str, side: str, qty: float,
+                   sl_pct: float, tp_pct: float,
+                   trail_pct: float, shadow: bool) -> Dict[str, Any]:
+    s = symbol.upper()
+    qty = round_qty(s, qty)
+    pos_side = _position_side(side)
+    opp = _opposite(side)
+
+    # ENTRY
+    entry_market(s, side, qty, pos_side, shadow)
+    ep = _entry_price_after_fill(s, pos_side) if not shadow else _last_price(s)
+
+    # Fiyatlar
+    sl_p = round_price(s, ep * (1 - sl_pct) if side == "BUY" else ep * (1 + sl_pct)) if sl_pct > 0 else None
+    tp_p = round_price(s, ep * (1 + tp_pct) if side == "BUY" else ep * (1 - tp_pct)) if tp_pct > 0 else None
+
+    # SL/TP (closePosition=True)
+    if sl_p:
+        stop_market_close(s, opp, sl_p, pos_side, WORKING_TYPE, shadow)
+        tg(f"🛡️ SL @ {sl_p}")
+    if tp_p:
+        take_profit_close(s, opp, tp_p, pos_side, WORKING_TYPE, shadow)
+        tg(f"🎯 TP @ {tp_p}")
+
+    # Trailing (opsiyonel)
+    tr_ok = False
+    if trail_pct and trail_pct > 0:
+        cb = max(0.1, min(5.0, trail_pct * 100))  # % cinsinden [0.1,5.0]
+        act = round_price(s, ep)
+        trailing_stop(s, opp, act, cb, pos_side, qty, shadow)
+        tr_ok = True
+        tg(f"🪤 Trailing {trail_pct*100:.2f}% act@{act}")
+
+    if not shadow:
+        tg(f"🚀 Entry {side} {s} qty={qty}  EP≈{ep:.2f}")
+
+    return {"entry_price": ep, "sl": sl_p, "tp": tp_p, "trail": tr_ok}
+
+# =======================
+# PRO otomatik (örnek)
+# =======================
+
+def kline_close(symbol: str, interval: str = "1m", limit: int = 30) -> list[float]:
+    kl = retry_call(client.futures_klines, "klines", symbol=symbol, interval=interval, limit=limit)
+    return [float(x[4]) for x in kl]
+
+def ema(vals: list[float], n: int) -> float:
+    k = 2/(n+1)
+    e = vals[0]
+    for v in vals[1:]:
+        e = v*k + e*(1-k)
+    return e
+
+def auto_pro_decide(symbol: str) -> Tuple[str, float, float]:
+    """Basit örnek: EMA hizasına göre yön/SL/TP seç."""
+    closes = kline_close(symbol, "1m", 60)
+    last = closes[-1]
+    e20  = ema(closes, 20)
+    e50  = ema(closes, 50)
+    side = "BUY" if e20 > e50 else "SELL"
+    risk = 0.01
+    reward = 2.0
+    print(f"🧠 PRO Auto: tf=1m risk={risk:.2f} rr={reward:.1f} strict={STRICT_MODE}")
+    return side, risk, risk*reward
+
+# =======================
+# Auth / CLI
+# =======================
+
+def auth_smoke():
+    calibrate_timestamp_offset()
+    try:
+        lk = retry_call(client.futures_stream_get_listen_key, "listen_key")
+        print("🔑 listenKey OK:", bool(lk))
+        bals = retry_call(client.futures_account_balance, "futures_balance")
+        print("🔐 Auth OK – balans kayıt sayısı:", len(bals))
+    except Exception as e:
+        print("❌ Auth FAIL:", e)
+        raise SystemExit(e)
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Kiripto Nova Bracket Bot")
+    p.add_argument("--symbol", help="Örn: BTCUSDT")
+    p.add_argument("--side", choices=["BUY", "SELL"])
+    p.add_argument("--qty", type=float, help="Miktar")
+    p.add_argument("--sl", type=float, default=SL_PCT_DEF)
+    p.add_argument("--tp", type=float, default=TP_PCT_DEF)
+    p.add_argument("--trail", type=float, default=TRAIL_PCT_DEF)
+    p.add_argument("--shadow", action="store_true")
+    p.add_argument("--auto-pro", action="store_true", help="Basit otomatik sinyal ve risk/ödül")
+    p.add_argument("--strict", action="store_true", help="STRICT mod (korumacı)")
+    return p.parse_args()
+
+def main():
+    args = parse_args()
+    shadow = bool(args.shadow)
+    strict = bool(args.strict or STRICT_MODE)
+
+    auth_smoke()
+
+    if not args.symbol and not args.auto_pro:
+        raise SystemExit("Lütfen --symbol verin veya --auto-pro kullanın.")
+
+    if args.auto_pro:
+        # PRO mod — sembol verilmediyse BTCUSDT varsay
+        sym = (args.symbol or "BTCUSDT").upper()
+        side, risk, rr = auto_pro_decide(sym)
+        qty = round_qty(sym, float(args.qty or 0.001))
+        sl_pct = risk
+        tp_pct = risk * rr
+        print(f"PRO seçimi: {side} {sym} qty={qty}  SL={sl_pct}  TP={tp_pct}")
+    else:
+        sym = args.symbol.upper()
+        side = args.side.upper()
+        qty  = float(args.qty)
+        sl_pct = max(0.0, float(args.sl))
+        tp_pct = max(0.0, float(args.tp))
+
+    trail_pct = max(0.0, float(args.trail))
+
+    print(f"🌍 Ortam: {'TESTNET' if USE_TESTNET else 'MAINNET'} | STRICT_MODE={strict}")
+    print(f"🧭 Symbol:{sym} Side:{side} Qty:{qty}")
+
+    apply_account_settings(sym)
+
+    # STRICT kontrol (örnek): çok dar SL/TP reddet
+    if strict:
+        if sl_pct < 0.002:
+            raise SystemExit("STRICT: SL çok dar (<0.2%)")
+        if tp_pct < sl_pct*1.5:
+            raise SystemExit("STRICT: TP, SL'in en az 1.5x’i olmalı")
+
+    res = bracket_market(sym, side, qty, sl_pct, tp_pct, trail_pct, shadow)
+    print(f"✅ Sonuç: entry_price={res['entry_price']:.4f}, sl={res['sl']}, tp={res['tp']}, trail={res['trail']}")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("🛑 İptal edildi.")
+try:
+    import regex  # type: ignore
+except ModuleNotFoundError:
+    print("❌ 'regex' paketi eksik/bozuk. PowerShell'de: python -m pip install --no-cache-dir regex==2024.5.15")
+    raise

@@ -1,0 +1,151 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+nova_rescue.py - sade yardımcı
+Subkomutlar:
+  plan          -> move_map.csv şablonu üretir (üstünü siz doldurursunuz)
+  apply         -> move_map.csv'deki taşıma/yeniden adlandırmaları uygular
+  ensure-init   -> paket dizinlerinde eksik __init__.py dosyalarını ekler
+  compile       -> py_compile ile tarama yapar, rapor yazar
+"""
+
+from __future__ import annotations
+import argparse, csv, os, sys, shutil, py_compile
+from pathlib import Path
+
+def ensure_inits(base: Path) -> int:
+    """base altında tüm paket dizinlerinde __init__.py yoksa ekle."""
+    added = 0
+    for dirpath, dirnames, filenames in os.walk(base):
+        p = Path(dirpath)
+        # __pycache__ ve .git gibi klasörleri atla
+        if p.name in {"__pycache__", ".git", ".venv", "venv"}:
+            continue
+        init_py = p / "__init__.py"
+        if p.is_dir() and not init_py.exists():
+            init_py.write_text('# package marker\n', encoding='utf-8')
+            added += 1
+    return added
+
+def do_plan(project_root: Path, src: Path, out_csv: Path) -> None:
+    """Boş bir move_map.csv şablonu üretir (varsa üzerine yazmaz)."""
+    if out_csv.exists():
+        print(f"[OK] move_map zaten var: {out_csv}")
+        return
+    out_csv.parent.mkdir(parents=True, exist_ok=True)
+    with out_csv.open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["src", "dst"])  # başlık
+        # Örnek satır (yorum niyetine)
+        # w.writerow(["src/kiripto_nova/strategies/strategic_ai_engine.py",
+        #             "src/kiripto_nova/strategies/strategic_ai_engine/__init__.py"])
+    print(f"[OK] Şablon oluşturuldu: {out_csv}")
+
+def _normalize_rel(p: Path, base: Path) -> Path:
+    p = p.resolve()
+    try:
+        return p.relative_to(base.resolve())
+    except Exception:
+        return p
+
+def do_apply(project_root: Path, src: Path, move_map: Path) -> None:
+    """move_map.csv'deki taşımaları uygular."""
+    if not move_map.exists():
+        print(f"[ERR] move_map bulunamadı: {move_map}")
+        sys.exit(2)
+
+    backup_dir = project_root / ".tools" / "backup_moves"
+    ops = 0
+
+    with move_map.open("r", encoding="utf-8") as f:
+        rd = csv.reader(f)
+        header = next(rd, None)
+        for row in rd:
+            if not row or len(row) < 2:
+                continue
+            src_rel, dst_rel = row[0].strip(), row[1].strip()
+            if not src_rel or not dst_rel:
+                continue
+
+            src_path = project_root / src_rel
+            dst_path = project_root / dst_rel
+
+            if not src_path.exists():
+                print(f"[SKIP] Kaynak yok: {src_rel}")
+                continue
+
+            dst_path.parent.mkdir(parents=True, exist_ok=True)
+
+            # Eğer hedef dosya varsa önce yedekle
+            if dst_path.exists():
+                bkp = backup_dir / _normalize_rel(dst_path, project_root)
+                bkp.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(dst_path, bkp)
+                # üzerine yazacağız
+            # Taşıma (Windows'ta kilit/izin şaşmaz ise doğrudan move iyidir)
+            try:
+                shutil.move(str(src_path), str(dst_path))
+            except Exception:
+                # move sorun çıkarsa kopyala + kaynağı sil
+                data = src_path.read_bytes()
+                dst_path.write_bytes(data)
+                try:
+                    src_path.unlink()
+                except Exception:
+                    pass
+
+            # Paket dizinleri için __init__.py ekle
+            ensure_inits(dst_path.parent)
+            ops += 1
+            print(f"[MOVE] {src_rel}  ->  {dst_rel}")
+
+    print(f"[DONE] Uygulanan taşımalar: {ops}")
+
+def do_compile(project_root: Path, src: Path) -> None:
+    """Tüm .py dosyalarını derlemeyi dener, rapor yazar."""
+    report = project_root / "compile_report.txt"
+    bad = 0
+    with report.open("w", encoding="utf-8") as r:
+        for p in (src).rglob("*.py"):
+            if "__pycache__" in p.parts:
+                continue
+            try:
+                py_compile.compile(str(p), doraise=True)
+            except Exception as e:
+                bad += 1
+                print(f"[BAD] {p}")
+                r.write(f"[BAD] {p}\n  -> {e}\n")
+    print(f"Compile check complete. Fails: {bad}.")
+    print(f"Report written to: {report}")
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description="Nova kurtarma aracı (sade)")
+    ap.add_argument("--project-root", "-p", default=".", help="Proje kökü (default: .)")
+    ap.add_argument("--src", default="src", help="Kaynak klasörü (default: src)")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    sp = sub.add_parser("plan", help="move_map.csv şablonu üret")
+    sp.add_argument("--out", default="move_map.csv", help="Çıkış CSV yolu")
+
+    sa = sub.add_parser("apply", help="move_map.csv'yi uygula")
+    sa.add_argument("--move-map", default="move_map.csv", help="CSV yolu")
+
+    sub.add_parser("ensure-init", help="Eksik __init__.py dosyalarını ekle")
+    sub.add_parser("compile", help="Hızlı derleme testi (rapor yazar)")
+
+    args = ap.parse_args()
+    project_root = Path(args.project_root).resolve()
+    src = (project_root / args.src).resolve()
+
+    if args.cmd == "plan":
+        do_plan(project_root, src, project_root / args.out)
+    elif args.cmd == "apply":
+        do_apply(project_root, src, project_root / args.move_map)
+    elif args.cmd == "ensure-init":
+        added = ensure_inits(src)
+        print(f"[OK] Eklenen __init__.py sayısı: {added}")
+    elif args.cmd == "compile":
+        do_compile(project_root, src)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,6 @@
+import yfinance as yf
+
+def get_oil_price():
+    oil = yf.Ticker("BZ=F")  # Brent crude oil
+    data = oil.history(period="1d")
+    return data['Close'].iloc[-1]

@@ -1,0 +1,10 @@
+﻿repos:
+  - repo: local
+    hooks:
+      - id: ascii-guard
+        name: ASCII-only guard
+        entry: python ascii_guard.py --root src
+        language: system
+        pass_filenames: false
+        files: '\.(py|txt|md|json|ya?ml)$'
+        exclude: '^(.git|\.venv|venv|env|backup_.*|tools/backup|.*site-packages.*|__pycache__)'

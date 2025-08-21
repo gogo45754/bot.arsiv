@@ -1,0 +1,9 @@
+from binance_data import get_price
+from news_data import get_crypto_news
+from twitter_data import get_crypto_tweets
+from oil_data import get_oil_price
+
+btc_price = get_price("BTCUSDT")
+news = get_crypto_news()
+tweets = get_crypto_tweets("bitcoin")
+brent_price = get_oil_price()

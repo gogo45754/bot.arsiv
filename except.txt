@@ -1,0 +1,9 @@
+import logging
+
+logging.basicConfig(filename="api_log.txt", level=logging.INFO)
+
+try:
+    newsapi = NewsApiClient(api_key=NEWS_API_KEY)
+    logging.info("API bağlantısı başarılı")
+except Exception as e:
+    logging.error(f"Hata oluştu: {e}")

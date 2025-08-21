@@ -1,0 +1,9 @@
+class ChainAlliance:
+    def __init__(self, name, allies, synergy_score, shared_layers):
+        self.name = name
+        self.allies = allies  # ['LunaX DAO', 'ZetaCore']
+        self.synergy_score = synergy_score  # 0-100
+        self.shared_layers = shared_layers  # ['zkLayer', 'governance', 'oracle']
+
+def rank_alliances(alliances):
+    return sorted(alliances, key=lambda a: a.synergy_score, reverse=True)

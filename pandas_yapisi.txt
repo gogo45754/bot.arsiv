@@ -1,0 +1,2646 @@
+Structure du dossier pour le volume Local Disk
+Le numéro de série du volume est 0000008F ACC4:CDA7
+C:\USERS\KAMAL\VENV\LIB\SITE-PACKAGES\PANDAS\TESTS
+|   test_aggregation.py
+|   test_algos.py
+|   test_common.py
+|   test_downstream.py
+|   test_errors.py
+|   test_expressions.py
+|   test_flags.py
+|   test_multilevel.py
+|   test_nanops.py
+|   test_optional_dependency.py
+|   test_register_accessor.py
+|   test_sorting.py
+|   test_take.py
+|   __init__.py
+|
++---api
+|   |   test_api.py
+|   |   test_types.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_api.cpython-311.pyc
+|           test_types.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---apply
+|   |   common.py
+|   |   test_frame_apply.py
+|   |   test_frame_apply_relabeling.py
+|   |   test_frame_transform.py
+|   |   test_invalid_arg.py
+|   |   test_numba.py
+|   |   test_series_apply.py
+|   |   test_series_apply_relabeling.py
+|   |   test_series_transform.py
+|   |   test_str.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           test_frame_apply.cpython-311.pyc
+|           test_frame_apply_relabeling.cpython-311.pyc
+|           test_frame_transform.cpython-311.pyc
+|           test_invalid_arg.cpython-311.pyc
+|           test_numba.cpython-311.pyc
+|           test_series_apply.cpython-311.pyc
+|           test_series_apply_relabeling.cpython-311.pyc
+|           test_series_transform.cpython-311.pyc
+|           test_str.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---arithmetic
+|   |   common.py
+|   |   conftest.py
+|   |   test_array_ops.py
+|   |   test_categorical.py
+|   |   test_datetime64.py
+|   |   test_interval.py
+|   |   test_numeric.py
+|   |   test_object.py
+|   |   test_period.py
+|   |   test_timedelta64.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           conftest.cpython-311.pyc
+|           test_array_ops.cpython-311.pyc
+|           test_categorical.cpython-311.pyc
+|           test_datetime64.cpython-311.pyc
+|           test_interval.cpython-311.pyc
+|           test_numeric.cpython-311.pyc
+|           test_object.cpython-311.pyc
+|           test_period.cpython-311.pyc
+|           test_timedelta64.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---arrays
+|   |   masked_shared.py
+|   |   test_array.py
+|   |   test_datetimelike.py
+|   |   test_datetimes.py
+|   |   test_ndarray_backed.py
+|   |   test_period.py
+|   |   test_timedeltas.py
+|   |   __init__.py
+|   |
+|   +---boolean
+|   |   |   test_arithmetic.py
+|   |   |   test_astype.py
+|   |   |   test_comparison.py
+|   |   |   test_construction.py
+|   |   |   test_function.py
+|   |   |   test_indexing.py
+|   |   |   test_logical.py
+|   |   |   test_ops.py
+|   |   |   test_reduction.py
+|   |   |   test_repr.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_comparison.cpython-311.pyc
+|   |           test_construction.cpython-311.pyc
+|   |           test_function.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_logical.cpython-311.pyc
+|   |           test_ops.cpython-311.pyc
+|   |           test_reduction.cpython-311.pyc
+|   |           test_repr.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---categorical
+|   |   |   test_algos.py
+|   |   |   test_analytics.py
+|   |   |   test_api.py
+|   |   |   test_astype.py
+|   |   |   test_constructors.py
+|   |   |   test_dtypes.py
+|   |   |   test_indexing.py
+|   |   |   test_map.py
+|   |   |   test_missing.py
+|   |   |   test_operators.py
+|   |   |   test_replace.py
+|   |   |   test_repr.py
+|   |   |   test_sorting.py
+|   |   |   test_subclass.py
+|   |   |   test_take.py
+|   |   |   test_warnings.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_algos.cpython-311.pyc
+|   |           test_analytics.cpython-311.pyc
+|   |           test_api.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_dtypes.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_map.cpython-311.pyc
+|   |           test_missing.cpython-311.pyc
+|   |           test_operators.cpython-311.pyc
+|   |           test_replace.cpython-311.pyc
+|   |           test_repr.cpython-311.pyc
+|   |           test_sorting.cpython-311.pyc
+|   |           test_subclass.cpython-311.pyc
+|   |           test_take.cpython-311.pyc
+|   |           test_warnings.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---datetimes
+|   |   |   test_constructors.py
+|   |   |   test_cumulative.py
+|   |   |   test_reductions.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_constructors.cpython-311.pyc
+|   |           test_cumulative.cpython-311.pyc
+|   |           test_reductions.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---floating
+|   |   |   conftest.py
+|   |   |   test_arithmetic.py
+|   |   |   test_astype.py
+|   |   |   test_comparison.py
+|   |   |   test_concat.py
+|   |   |   test_construction.py
+|   |   |   test_contains.py
+|   |   |   test_function.py
+|   |   |   test_repr.py
+|   |   |   test_to_numpy.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_comparison.cpython-311.pyc
+|   |           test_concat.cpython-311.pyc
+|   |           test_construction.cpython-311.pyc
+|   |           test_contains.cpython-311.pyc
+|   |           test_function.cpython-311.pyc
+|   |           test_repr.cpython-311.pyc
+|   |           test_to_numpy.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---integer
+|   |   |   conftest.py
+|   |   |   test_arithmetic.py
+|   |   |   test_comparison.py
+|   |   |   test_concat.py
+|   |   |   test_construction.py
+|   |   |   test_dtypes.py
+|   |   |   test_function.py
+|   |   |   test_indexing.py
+|   |   |   test_reduction.py
+|   |   |   test_repr.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_comparison.cpython-311.pyc
+|   |           test_concat.cpython-311.pyc
+|   |           test_construction.cpython-311.pyc
+|   |           test_dtypes.cpython-311.pyc
+|   |           test_function.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_reduction.cpython-311.pyc
+|   |           test_repr.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---interval
+|   |   |   test_astype.py
+|   |   |   test_formats.py
+|   |   |   test_interval.py
+|   |   |   test_interval_pyarrow.py
+|   |   |   test_overlaps.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_astype.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_interval.cpython-311.pyc
+|   |           test_interval_pyarrow.cpython-311.pyc
+|   |           test_overlaps.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---masked
+|   |   |   test_arithmetic.py
+|   |   |   test_arrow_compat.py
+|   |   |   test_function.py
+|   |   |   test_indexing.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_arrow_compat.cpython-311.pyc
+|   |           test_function.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---numpy_
+|   |   |   test_indexing.py
+|   |   |   test_numpy.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_indexing.cpython-311.pyc
+|   |           test_numpy.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---period
+|   |   |   test_arrow_compat.py
+|   |   |   test_astype.py
+|   |   |   test_constructors.py
+|   |   |   test_reductions.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_arrow_compat.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_reductions.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---sparse
+|   |   |   test_accessor.py
+|   |   |   test_arithmetics.py
+|   |   |   test_array.py
+|   |   |   test_astype.py
+|   |   |   test_combine_concat.py
+|   |   |   test_constructors.py
+|   |   |   test_dtype.py
+|   |   |   test_indexing.py
+|   |   |   test_libsparse.py
+|   |   |   test_reductions.py
+|   |   |   test_unary.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_accessor.cpython-311.pyc
+|   |           test_arithmetics.cpython-311.pyc
+|   |           test_array.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_combine_concat.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_dtype.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_libsparse.cpython-311.pyc
+|   |           test_reductions.cpython-311.pyc
+|   |           test_unary.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---string_
+|   |   |   test_concat.py
+|   |   |   test_string.py
+|   |   |   test_string_arrow.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_concat.cpython-311.pyc
+|   |           test_string.cpython-311.pyc
+|   |           test_string_arrow.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---timedeltas
+|   |   |   test_constructors.py
+|   |   |   test_cumulative.py
+|   |   |   test_reductions.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_constructors.cpython-311.pyc
+|   |           test_cumulative.cpython-311.pyc
+|   |           test_reductions.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           masked_shared.cpython-311.pyc
+|           test_array.cpython-311.pyc
+|           test_datetimelike.cpython-311.pyc
+|           test_datetimes.cpython-311.pyc
+|           test_ndarray_backed.cpython-311.pyc
+|           test_period.cpython-311.pyc
+|           test_timedeltas.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---base
+|   |   common.py
+|   |   test_constructors.py
+|   |   test_conversion.py
+|   |   test_fillna.py
+|   |   test_misc.py
+|   |   test_transpose.py
+|   |   test_unique.py
+|   |   test_value_counts.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           test_constructors.cpython-311.pyc
+|           test_conversion.cpython-311.pyc
+|           test_fillna.cpython-311.pyc
+|           test_misc.cpython-311.pyc
+|           test_transpose.cpython-311.pyc
+|           test_unique.cpython-311.pyc
+|           test_value_counts.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---computation
+|   |   test_compat.py
+|   |   test_eval.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_compat.cpython-311.pyc
+|           test_eval.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---config
+|   |   test_config.py
+|   |   test_localization.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_config.cpython-311.pyc
+|           test_localization.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---construction
+|   |   test_extract_array.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_extract_array.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---copy_view
+|   |   test_array.py
+|   |   test_astype.py
+|   |   test_chained_assignment_deprecation.py
+|   |   test_clip.py
+|   |   test_constructors.py
+|   |   test_core_functionalities.py
+|   |   test_functions.py
+|   |   test_indexing.py
+|   |   test_internals.py
+|   |   test_interp_fillna.py
+|   |   test_methods.py
+|   |   test_replace.py
+|   |   test_setitem.py
+|   |   test_util.py
+|   |   util.py
+|   |   __init__.py
+|   |
+|   +---index
+|   |   |   test_datetimeindex.py
+|   |   |   test_index.py
+|   |   |   test_periodindex.py
+|   |   |   test_timedeltaindex.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_datetimeindex.cpython-311.pyc
+|   |           test_index.cpython-311.pyc
+|   |           test_periodindex.cpython-311.pyc
+|   |           test_timedeltaindex.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           test_array.cpython-311.pyc
+|           test_astype.cpython-311.pyc
+|           test_chained_assignment_deprecation.cpython-311.pyc
+|           test_clip.cpython-311.pyc
+|           test_constructors.cpython-311.pyc
+|           test_core_functionalities.cpython-311.pyc
+|           test_functions.cpython-311.pyc
+|           test_indexing.cpython-311.pyc
+|           test_internals.cpython-311.pyc
+|           test_interp_fillna.cpython-311.pyc
+|           test_methods.cpython-311.pyc
+|           test_replace.cpython-311.pyc
+|           test_setitem.cpython-311.pyc
+|           test_util.cpython-311.pyc
+|           util.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---dtypes
+|   |   test_common.py
+|   |   test_concat.py
+|   |   test_dtypes.py
+|   |   test_generic.py
+|   |   test_inference.py
+|   |   test_missing.py
+|   |   __init__.py
+|   |
+|   +---cast
+|   |   |   test_can_hold_element.py
+|   |   |   test_construct_from_scalar.py
+|   |   |   test_construct_ndarray.py
+|   |   |   test_construct_object_arr.py
+|   |   |   test_dict_compat.py
+|   |   |   test_downcast.py
+|   |   |   test_find_common_type.py
+|   |   |   test_infer_datetimelike.py
+|   |   |   test_infer_dtype.py
+|   |   |   test_maybe_box_native.py
+|   |   |   test_promote.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_can_hold_element.cpython-311.pyc
+|   |           test_construct_from_scalar.cpython-311.pyc
+|   |           test_construct_ndarray.cpython-311.pyc
+|   |           test_construct_object_arr.cpython-311.pyc
+|   |           test_dict_compat.cpython-311.pyc
+|   |           test_downcast.cpython-311.pyc
+|   |           test_find_common_type.cpython-311.pyc
+|   |           test_infer_datetimelike.cpython-311.pyc
+|   |           test_infer_dtype.cpython-311.pyc
+|   |           test_maybe_box_native.cpython-311.pyc
+|   |           test_promote.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           test_common.cpython-311.pyc
+|           test_concat.cpython-311.pyc
+|           test_dtypes.cpython-311.pyc
+|           test_generic.cpython-311.pyc
+|           test_inference.cpython-311.pyc
+|           test_missing.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---extension
+|   |   conftest.py
+|   |   test_arrow.py
+|   |   test_categorical.py
+|   |   test_common.py
+|   |   test_datetime.py
+|   |   test_extension.py
+|   |   test_interval.py
+|   |   test_masked.py
+|   |   test_numpy.py
+|   |   test_period.py
+|   |   test_sparse.py
+|   |   test_string.py
+|   |   __init__.py
+|   |
+|   +---array_with_attr
+|   |   |   array.py
+|   |   |   test_array_with_attr.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           array.cpython-311.pyc
+|   |           test_array_with_attr.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---base
+|   |   |   accumulate.py
+|   |   |   base.py
+|   |   |   casting.py
+|   |   |   constructors.py
+|   |   |   dim2.py
+|   |   |   dtype.py
+|   |   |   getitem.py
+|   |   |   groupby.py
+|   |   |   index.py
+|   |   |   interface.py
+|   |   |   io.py
+|   |   |   methods.py
+|   |   |   missing.py
+|   |   |   ops.py
+|   |   |   printing.py
+|   |   |   reduce.py
+|   |   |   reshaping.py
+|   |   |   setitem.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           accumulate.cpython-311.pyc
+|   |           base.cpython-311.pyc
+|   |           casting.cpython-311.pyc
+|   |           constructors.cpython-311.pyc
+|   |           dim2.cpython-311.pyc
+|   |           dtype.cpython-311.pyc
+|   |           getitem.cpython-311.pyc
+|   |           groupby.cpython-311.pyc
+|   |           index.cpython-311.pyc
+|   |           interface.cpython-311.pyc
+|   |           io.cpython-311.pyc
+|   |           methods.cpython-311.pyc
+|   |           missing.cpython-311.pyc
+|   |           ops.cpython-311.pyc
+|   |           printing.cpython-311.pyc
+|   |           reduce.cpython-311.pyc
+|   |           reshaping.cpython-311.pyc
+|   |           setitem.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---date
+|   |   |   array.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           array.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---decimal
+|   |   |   array.py
+|   |   |   test_decimal.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           array.cpython-311.pyc
+|   |           test_decimal.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---json
+|   |   |   array.py
+|   |   |   test_json.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           array.cpython-311.pyc
+|   |           test_json.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---list
+|   |   |   array.py
+|   |   |   test_list.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           array.cpython-311.pyc
+|   |           test_list.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_arrow.cpython-311.pyc
+|           test_categorical.cpython-311.pyc
+|           test_common.cpython-311.pyc
+|           test_datetime.cpython-311.pyc
+|           test_extension.cpython-311.pyc
+|           test_interval.cpython-311.pyc
+|           test_masked.cpython-311.pyc
+|           test_numpy.cpython-311.pyc
+|           test_period.cpython-311.pyc
+|           test_sparse.cpython-311.pyc
+|           test_string.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---frame
+|   |   common.py
+|   |   conftest.py
+|   |   test_alter_axes.py
+|   |   test_api.py
+|   |   test_arithmetic.py
+|   |   test_arrow_interface.py
+|   |   test_block_internals.py
+|   |   test_constructors.py
+|   |   test_cumulative.py
+|   |   test_iteration.py
+|   |   test_logical_ops.py
+|   |   test_nonunique_indexes.py
+|   |   test_npfuncs.py
+|   |   test_query_eval.py
+|   |   test_reductions.py
+|   |   test_repr.py
+|   |   test_stack_unstack.py
+|   |   test_subclass.py
+|   |   test_ufunc.py
+|   |   test_unary.py
+|   |   test_validate.py
+|   |   __init__.py
+|   |
+|   +---constructors
+|   |   |   test_from_dict.py
+|   |   |   test_from_records.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_from_dict.cpython-311.pyc
+|   |           test_from_records.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---indexing
+|   |   |   test_coercion.py
+|   |   |   test_delitem.py
+|   |   |   test_get.py
+|   |   |   test_getitem.py
+|   |   |   test_get_value.py
+|   |   |   test_indexing.py
+|   |   |   test_insert.py
+|   |   |   test_mask.py
+|   |   |   test_setitem.py
+|   |   |   test_set_value.py
+|   |   |   test_take.py
+|   |   |   test_where.py
+|   |   |   test_xs.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_coercion.cpython-311.pyc
+|   |           test_delitem.cpython-311.pyc
+|   |           test_get.cpython-311.pyc
+|   |           test_getitem.cpython-311.pyc
+|   |           test_get_value.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_insert.cpython-311.pyc
+|   |           test_mask.cpython-311.pyc
+|   |           test_setitem.cpython-311.pyc
+|   |           test_set_value.cpython-311.pyc
+|   |           test_take.cpython-311.pyc
+|   |           test_where.cpython-311.pyc
+|   |           test_xs.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---methods
+|   |   |   test_add_prefix_suffix.py
+|   |   |   test_align.py
+|   |   |   test_asfreq.py
+|   |   |   test_asof.py
+|   |   |   test_assign.py
+|   |   |   test_astype.py
+|   |   |   test_at_time.py
+|   |   |   test_between_time.py
+|   |   |   test_clip.py
+|   |   |   test_combine.py
+|   |   |   test_combine_first.py
+|   |   |   test_compare.py
+|   |   |   test_convert_dtypes.py
+|   |   |   test_copy.py
+|   |   |   test_count.py
+|   |   |   test_cov_corr.py
+|   |   |   test_describe.py
+|   |   |   test_diff.py
+|   |   |   test_dot.py
+|   |   |   test_drop.py
+|   |   |   test_droplevel.py
+|   |   |   test_dropna.py
+|   |   |   test_drop_duplicates.py
+|   |   |   test_dtypes.py
+|   |   |   test_duplicated.py
+|   |   |   test_equals.py
+|   |   |   test_explode.py
+|   |   |   test_fillna.py
+|   |   |   test_filter.py
+|   |   |   test_first_and_last.py
+|   |   |   test_first_valid_index.py
+|   |   |   test_get_numeric_data.py
+|   |   |   test_head_tail.py
+|   |   |   test_infer_objects.py
+|   |   |   test_info.py
+|   |   |   test_interpolate.py
+|   |   |   test_isetitem.py
+|   |   |   test_isin.py
+|   |   |   test_is_homogeneous_dtype.py
+|   |   |   test_iterrows.py
+|   |   |   test_join.py
+|   |   |   test_map.py
+|   |   |   test_matmul.py
+|   |   |   test_nlargest.py
+|   |   |   test_pct_change.py
+|   |   |   test_pipe.py
+|   |   |   test_pop.py
+|   |   |   test_quantile.py
+|   |   |   test_rank.py
+|   |   |   test_reindex.py
+|   |   |   test_reindex_like.py
+|   |   |   test_rename.py
+|   |   |   test_rename_axis.py
+|   |   |   test_reorder_levels.py
+|   |   |   test_replace.py
+|   |   |   test_reset_index.py
+|   |   |   test_round.py
+|   |   |   test_sample.py
+|   |   |   test_select_dtypes.py
+|   |   |   test_set_axis.py
+|   |   |   test_set_index.py
+|   |   |   test_shift.py
+|   |   |   test_size.py
+|   |   |   test_sort_index.py
+|   |   |   test_sort_values.py
+|   |   |   test_swapaxes.py
+|   |   |   test_swaplevel.py
+|   |   |   test_to_csv.py
+|   |   |   test_to_dict.py
+|   |   |   test_to_dict_of_blocks.py
+|   |   |   test_to_numpy.py
+|   |   |   test_to_period.py
+|   |   |   test_to_records.py
+|   |   |   test_to_timestamp.py
+|   |   |   test_transpose.py
+|   |   |   test_truncate.py
+|   |   |   test_tz_convert.py
+|   |   |   test_tz_localize.py
+|   |   |   test_update.py
+|   |   |   test_values.py
+|   |   |   test_value_counts.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_add_prefix_suffix.cpython-311.pyc
+|   |           test_align.cpython-311.pyc
+|   |           test_asfreq.cpython-311.pyc
+|   |           test_asof.cpython-311.pyc
+|   |           test_assign.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_at_time.cpython-311.pyc
+|   |           test_between_time.cpython-311.pyc
+|   |           test_clip.cpython-311.pyc
+|   |           test_combine.cpython-311.pyc
+|   |           test_combine_first.cpython-311.pyc
+|   |           test_compare.cpython-311.pyc
+|   |           test_convert_dtypes.cpython-311.pyc
+|   |           test_copy.cpython-311.pyc
+|   |           test_count.cpython-311.pyc
+|   |           test_cov_corr.cpython-311.pyc
+|   |           test_describe.cpython-311.pyc
+|   |           test_diff.cpython-311.pyc
+|   |           test_dot.cpython-311.pyc
+|   |           test_drop.cpython-311.pyc
+|   |           test_droplevel.cpython-311.pyc
+|   |           test_dropna.cpython-311.pyc
+|   |           test_drop_duplicates.cpython-311.pyc
+|   |           test_dtypes.cpython-311.pyc
+|   |           test_duplicated.cpython-311.pyc
+|   |           test_equals.cpython-311.pyc
+|   |           test_explode.cpython-311.pyc
+|   |           test_fillna.cpython-311.pyc
+|   |           test_filter.cpython-311.pyc
+|   |           test_first_and_last.cpython-311.pyc
+|   |           test_first_valid_index.cpython-311.pyc
+|   |           test_get_numeric_data.cpython-311.pyc
+|   |           test_head_tail.cpython-311.pyc
+|   |           test_infer_objects.cpython-311.pyc
+|   |           test_info.cpython-311.pyc
+|   |           test_interpolate.cpython-311.pyc
+|   |           test_isetitem.cpython-311.pyc
+|   |           test_isin.cpython-311.pyc
+|   |           test_is_homogeneous_dtype.cpython-311.pyc
+|   |           test_iterrows.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_map.cpython-311.pyc
+|   |           test_matmul.cpython-311.pyc
+|   |           test_nlargest.cpython-311.pyc
+|   |           test_pct_change.cpython-311.pyc
+|   |           test_pipe.cpython-311.pyc
+|   |           test_pop.cpython-311.pyc
+|   |           test_quantile.cpython-311.pyc
+|   |           test_rank.cpython-311.pyc
+|   |           test_reindex.cpython-311.pyc
+|   |           test_reindex_like.cpython-311.pyc
+|   |           test_rename.cpython-311.pyc
+|   |           test_rename_axis.cpython-311.pyc
+|   |           test_reorder_levels.cpython-311.pyc
+|   |           test_replace.cpython-311.pyc
+|   |           test_reset_index.cpython-311.pyc
+|   |           test_round.cpython-311.pyc
+|   |           test_sample.cpython-311.pyc
+|   |           test_select_dtypes.cpython-311.pyc
+|   |           test_set_axis.cpython-311.pyc
+|   |           test_set_index.cpython-311.pyc
+|   |           test_shift.cpython-311.pyc
+|   |           test_size.cpython-311.pyc
+|   |           test_sort_index.cpython-311.pyc
+|   |           test_sort_values.cpython-311.pyc
+|   |           test_swapaxes.cpython-311.pyc
+|   |           test_swaplevel.cpython-311.pyc
+|   |           test_to_csv.cpython-311.pyc
+|   |           test_to_dict.cpython-311.pyc
+|   |           test_to_dict_of_blocks.cpython-311.pyc
+|   |           test_to_numpy.cpython-311.pyc
+|   |           test_to_period.cpython-311.pyc
+|   |           test_to_records.cpython-311.pyc
+|   |           test_to_timestamp.cpython-311.pyc
+|   |           test_transpose.cpython-311.pyc
+|   |           test_truncate.cpython-311.pyc
+|   |           test_tz_convert.cpython-311.pyc
+|   |           test_tz_localize.cpython-311.pyc
+|   |           test_update.cpython-311.pyc
+|   |           test_values.cpython-311.pyc
+|   |           test_value_counts.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           conftest.cpython-311.pyc
+|           test_alter_axes.cpython-311.pyc
+|           test_api.cpython-311.pyc
+|           test_arithmetic.cpython-311.pyc
+|           test_arrow_interface.cpython-311.pyc
+|           test_block_internals.cpython-311.pyc
+|           test_constructors.cpython-311.pyc
+|           test_cumulative.cpython-311.pyc
+|           test_iteration.cpython-311.pyc
+|           test_logical_ops.cpython-311.pyc
+|           test_nonunique_indexes.cpython-311.pyc
+|           test_npfuncs.cpython-311.pyc
+|           test_query_eval.cpython-311.pyc
+|           test_reductions.cpython-311.pyc
+|           test_repr.cpython-311.pyc
+|           test_stack_unstack.cpython-311.pyc
+|           test_subclass.cpython-311.pyc
+|           test_ufunc.cpython-311.pyc
+|           test_unary.cpython-311.pyc
+|           test_validate.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---generic
+|   |   test_duplicate_labels.py
+|   |   test_finalize.py
+|   |   test_frame.py
+|   |   test_generic.py
+|   |   test_label_or_level_utils.py
+|   |   test_series.py
+|   |   test_to_xarray.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_duplicate_labels.cpython-311.pyc
+|           test_finalize.cpython-311.pyc
+|           test_frame.cpython-311.pyc
+|           test_generic.cpython-311.pyc
+|           test_label_or_level_utils.cpython-311.pyc
+|           test_series.cpython-311.pyc
+|           test_to_xarray.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---groupby
+|   |   conftest.py
+|   |   test_all_methods.py
+|   |   test_api.py
+|   |   test_apply.py
+|   |   test_apply_mutate.py
+|   |   test_bin_groupby.py
+|   |   test_categorical.py
+|   |   test_counting.py
+|   |   test_cumulative.py
+|   |   test_filters.py
+|   |   test_groupby.py
+|   |   test_groupby_dropna.py
+|   |   test_groupby_subclass.py
+|   |   test_grouping.py
+|   |   test_indexing.py
+|   |   test_index_as_string.py
+|   |   test_libgroupby.py
+|   |   test_missing.py
+|   |   test_numba.py
+|   |   test_numeric_only.py
+|   |   test_pipe.py
+|   |   test_raises.py
+|   |   test_reductions.py
+|   |   test_timegrouper.py
+|   |   __init__.py
+|   |
+|   +---aggregate
+|   |   |   test_aggregate.py
+|   |   |   test_cython.py
+|   |   |   test_numba.py
+|   |   |   test_other.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_aggregate.cpython-311.pyc
+|   |           test_cython.cpython-311.pyc
+|   |           test_numba.cpython-311.pyc
+|   |           test_other.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---methods
+|   |   |   test_corrwith.py
+|   |   |   test_describe.py
+|   |   |   test_groupby_shift_diff.py
+|   |   |   test_is_monotonic.py
+|   |   |   test_nlargest_nsmallest.py
+|   |   |   test_nth.py
+|   |   |   test_quantile.py
+|   |   |   test_rank.py
+|   |   |   test_sample.py
+|   |   |   test_size.py
+|   |   |   test_skew.py
+|   |   |   test_value_counts.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_corrwith.cpython-311.pyc
+|   |           test_describe.cpython-311.pyc
+|   |           test_groupby_shift_diff.cpython-311.pyc
+|   |           test_is_monotonic.cpython-311.pyc
+|   |           test_nlargest_nsmallest.cpython-311.pyc
+|   |           test_nth.cpython-311.pyc
+|   |           test_quantile.cpython-311.pyc
+|   |           test_rank.cpython-311.pyc
+|   |           test_sample.cpython-311.pyc
+|   |           test_size.cpython-311.pyc
+|   |           test_skew.cpython-311.pyc
+|   |           test_value_counts.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---transform
+|   |   |   test_numba.py
+|   |   |   test_transform.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_numba.cpython-311.pyc
+|   |           test_transform.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_all_methods.cpython-311.pyc
+|           test_api.cpython-311.pyc
+|           test_apply.cpython-311.pyc
+|           test_apply_mutate.cpython-311.pyc
+|           test_bin_groupby.cpython-311.pyc
+|           test_categorical.cpython-311.pyc
+|           test_counting.cpython-311.pyc
+|           test_cumulative.cpython-311.pyc
+|           test_filters.cpython-311.pyc
+|           test_groupby.cpython-311.pyc
+|           test_groupby_dropna.cpython-311.pyc
+|           test_groupby_subclass.cpython-311.pyc
+|           test_grouping.cpython-311.pyc
+|           test_indexing.cpython-311.pyc
+|           test_index_as_string.cpython-311.pyc
+|           test_libgroupby.cpython-311.pyc
+|           test_missing.cpython-311.pyc
+|           test_numba.cpython-311.pyc
+|           test_numeric_only.cpython-311.pyc
+|           test_pipe.cpython-311.pyc
+|           test_raises.cpython-311.pyc
+|           test_reductions.cpython-311.pyc
+|           test_timegrouper.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---indexes
+|   |   conftest.py
+|   |   test_any_index.py
+|   |   test_base.py
+|   |   test_common.py
+|   |   test_datetimelike.py
+|   |   test_engines.py
+|   |   test_frozen.py
+|   |   test_indexing.py
+|   |   test_index_new.py
+|   |   test_numpy_compat.py
+|   |   test_old_base.py
+|   |   test_setops.py
+|   |   test_subclass.py
+|   |   __init__.py
+|   |
+|   +---base_class
+|   |   |   test_constructors.py
+|   |   |   test_formats.py
+|   |   |   test_indexing.py
+|   |   |   test_pickle.py
+|   |   |   test_reshape.py
+|   |   |   test_setops.py
+|   |   |   test_where.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_constructors.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_reshape.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           test_where.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---categorical
+|   |   |   test_append.py
+|   |   |   test_astype.py
+|   |   |   test_category.py
+|   |   |   test_constructors.py
+|   |   |   test_equals.py
+|   |   |   test_fillna.py
+|   |   |   test_formats.py
+|   |   |   test_indexing.py
+|   |   |   test_map.py
+|   |   |   test_reindex.py
+|   |   |   test_setops.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_append.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_category.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_equals.cpython-311.pyc
+|   |           test_fillna.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_map.cpython-311.pyc
+|   |           test_reindex.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---datetimelike_
+|   |   |   test_drop_duplicates.py
+|   |   |   test_equals.py
+|   |   |   test_indexing.py
+|   |   |   test_is_monotonic.py
+|   |   |   test_nat.py
+|   |   |   test_sort_values.py
+|   |   |   test_value_counts.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_drop_duplicates.cpython-311.pyc
+|   |           test_equals.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_is_monotonic.cpython-311.pyc
+|   |           test_nat.cpython-311.pyc
+|   |           test_sort_values.cpython-311.pyc
+|   |           test_value_counts.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---datetimes
+|   |   |   test_arithmetic.py
+|   |   |   test_constructors.py
+|   |   |   test_datetime.py
+|   |   |   test_date_range.py
+|   |   |   test_formats.py
+|   |   |   test_freq_attr.py
+|   |   |   test_indexing.py
+|   |   |   test_iter.py
+|   |   |   test_join.py
+|   |   |   test_npfuncs.py
+|   |   |   test_ops.py
+|   |   |   test_partial_slicing.py
+|   |   |   test_pickle.py
+|   |   |   test_reindex.py
+|   |   |   test_scalar_compat.py
+|   |   |   test_setops.py
+|   |   |   test_timezones.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---methods
+|   |   |   |   test_asof.py
+|   |   |   |   test_astype.py
+|   |   |   |   test_delete.py
+|   |   |   |   test_factorize.py
+|   |   |   |   test_fillna.py
+|   |   |   |   test_insert.py
+|   |   |   |   test_isocalendar.py
+|   |   |   |   test_map.py
+|   |   |   |   test_normalize.py
+|   |   |   |   test_repeat.py
+|   |   |   |   test_resolution.py
+|   |   |   |   test_round.py
+|   |   |   |   test_shift.py
+|   |   |   |   test_snap.py
+|   |   |   |   test_to_frame.py
+|   |   |   |   test_to_julian_date.py
+|   |   |   |   test_to_period.py
+|   |   |   |   test_to_pydatetime.py
+|   |   |   |   test_to_series.py
+|   |   |   |   test_tz_convert.py
+|   |   |   |   test_tz_localize.py
+|   |   |   |   test_unique.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_asof.cpython-311.pyc
+|   |   |           test_astype.cpython-311.pyc
+|   |   |           test_delete.cpython-311.pyc
+|   |   |           test_factorize.cpython-311.pyc
+|   |   |           test_fillna.cpython-311.pyc
+|   |   |           test_insert.cpython-311.pyc
+|   |   |           test_isocalendar.cpython-311.pyc
+|   |   |           test_map.cpython-311.pyc
+|   |   |           test_normalize.cpython-311.pyc
+|   |   |           test_repeat.cpython-311.pyc
+|   |   |           test_resolution.cpython-311.pyc
+|   |   |           test_round.cpython-311.pyc
+|   |   |           test_shift.cpython-311.pyc
+|   |   |           test_snap.cpython-311.pyc
+|   |   |           test_to_frame.cpython-311.pyc
+|   |   |           test_to_julian_date.cpython-311.pyc
+|   |   |           test_to_period.cpython-311.pyc
+|   |   |           test_to_pydatetime.cpython-311.pyc
+|   |   |           test_to_series.cpython-311.pyc
+|   |   |           test_tz_convert.cpython-311.pyc
+|   |   |           test_tz_localize.cpython-311.pyc
+|   |   |           test_unique.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_datetime.cpython-311.pyc
+|   |           test_date_range.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_freq_attr.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_iter.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_npfuncs.cpython-311.pyc
+|   |           test_ops.cpython-311.pyc
+|   |           test_partial_slicing.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_reindex.cpython-311.pyc
+|   |           test_scalar_compat.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           test_timezones.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---interval
+|   |   |   test_astype.py
+|   |   |   test_constructors.py
+|   |   |   test_equals.py
+|   |   |   test_formats.py
+|   |   |   test_indexing.py
+|   |   |   test_interval.py
+|   |   |   test_interval_range.py
+|   |   |   test_interval_tree.py
+|   |   |   test_join.py
+|   |   |   test_pickle.py
+|   |   |   test_setops.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_astype.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_equals.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_interval.cpython-311.pyc
+|   |           test_interval_range.cpython-311.pyc
+|   |           test_interval_tree.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---multi
+|   |   |   conftest.py
+|   |   |   test_analytics.py
+|   |   |   test_astype.py
+|   |   |   test_compat.py
+|   |   |   test_constructors.py
+|   |   |   test_conversion.py
+|   |   |   test_copy.py
+|   |   |   test_drop.py
+|   |   |   test_duplicates.py
+|   |   |   test_equivalence.py
+|   |   |   test_formats.py
+|   |   |   test_get_level_values.py
+|   |   |   test_get_set.py
+|   |   |   test_indexing.py
+|   |   |   test_integrity.py
+|   |   |   test_isin.py
+|   |   |   test_join.py
+|   |   |   test_lexsort.py
+|   |   |   test_missing.py
+|   |   |   test_monotonic.py
+|   |   |   test_names.py
+|   |   |   test_partial_indexing.py
+|   |   |   test_pickle.py
+|   |   |   test_reindex.py
+|   |   |   test_reshape.py
+|   |   |   test_setops.py
+|   |   |   test_sorting.py
+|   |   |   test_take.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_analytics.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_compat.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_conversion.cpython-311.pyc
+|   |           test_copy.cpython-311.pyc
+|   |           test_drop.cpython-311.pyc
+|   |           test_duplicates.cpython-311.pyc
+|   |           test_equivalence.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_get_level_values.cpython-311.pyc
+|   |           test_get_set.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_integrity.cpython-311.pyc
+|   |           test_isin.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_lexsort.cpython-311.pyc
+|   |           test_missing.cpython-311.pyc
+|   |           test_monotonic.cpython-311.pyc
+|   |           test_names.cpython-311.pyc
+|   |           test_partial_indexing.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_reindex.cpython-311.pyc
+|   |           test_reshape.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           test_sorting.cpython-311.pyc
+|   |           test_take.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---numeric
+|   |   |   test_astype.py
+|   |   |   test_indexing.py
+|   |   |   test_join.py
+|   |   |   test_numeric.py
+|   |   |   test_setops.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_astype.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_numeric.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---object
+|   |   |   test_astype.py
+|   |   |   test_indexing.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_astype.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---period
+|   |   |   test_constructors.py
+|   |   |   test_formats.py
+|   |   |   test_freq_attr.py
+|   |   |   test_indexing.py
+|   |   |   test_join.py
+|   |   |   test_monotonic.py
+|   |   |   test_partial_slicing.py
+|   |   |   test_period.py
+|   |   |   test_period_range.py
+|   |   |   test_pickle.py
+|   |   |   test_resolution.py
+|   |   |   test_scalar_compat.py
+|   |   |   test_searchsorted.py
+|   |   |   test_setops.py
+|   |   |   test_tools.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---methods
+|   |   |   |   test_asfreq.py
+|   |   |   |   test_astype.py
+|   |   |   |   test_factorize.py
+|   |   |   |   test_fillna.py
+|   |   |   |   test_insert.py
+|   |   |   |   test_is_full.py
+|   |   |   |   test_repeat.py
+|   |   |   |   test_shift.py
+|   |   |   |   test_to_timestamp.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_asfreq.cpython-311.pyc
+|   |   |           test_astype.cpython-311.pyc
+|   |   |           test_factorize.cpython-311.pyc
+|   |   |           test_fillna.cpython-311.pyc
+|   |   |           test_insert.cpython-311.pyc
+|   |   |           test_is_full.cpython-311.pyc
+|   |   |           test_repeat.cpython-311.pyc
+|   |   |           test_shift.cpython-311.pyc
+|   |   |           test_to_timestamp.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_constructors.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_freq_attr.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_monotonic.cpython-311.pyc
+|   |           test_partial_slicing.cpython-311.pyc
+|   |           test_period.cpython-311.pyc
+|   |           test_period_range.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_resolution.cpython-311.pyc
+|   |           test_scalar_compat.cpython-311.pyc
+|   |           test_searchsorted.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           test_tools.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---ranges
+|   |   |   test_constructors.py
+|   |   |   test_indexing.py
+|   |   |   test_join.py
+|   |   |   test_range.py
+|   |   |   test_setops.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_constructors.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_range.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---string
+|   |   |   test_astype.py
+|   |   |   test_indexing.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_astype.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---timedeltas
+|   |   |   test_arithmetic.py
+|   |   |   test_constructors.py
+|   |   |   test_delete.py
+|   |   |   test_formats.py
+|   |   |   test_freq_attr.py
+|   |   |   test_indexing.py
+|   |   |   test_join.py
+|   |   |   test_ops.py
+|   |   |   test_pickle.py
+|   |   |   test_scalar_compat.py
+|   |   |   test_searchsorted.py
+|   |   |   test_setops.py
+|   |   |   test_timedelta.py
+|   |   |   test_timedelta_range.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---methods
+|   |   |   |   test_astype.py
+|   |   |   |   test_factorize.py
+|   |   |   |   test_fillna.py
+|   |   |   |   test_insert.py
+|   |   |   |   test_repeat.py
+|   |   |   |   test_shift.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_astype.cpython-311.pyc
+|   |   |           test_factorize.cpython-311.pyc
+|   |   |           test_fillna.cpython-311.pyc
+|   |   |           test_insert.cpython-311.pyc
+|   |   |           test_repeat.cpython-311.pyc
+|   |   |           test_shift.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_delete.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_freq_attr.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_join.cpython-311.pyc
+|   |           test_ops.cpython-311.pyc
+|   |           test_pickle.cpython-311.pyc
+|   |           test_scalar_compat.cpython-311.pyc
+|   |           test_searchsorted.cpython-311.pyc
+|   |           test_setops.cpython-311.pyc
+|   |           test_timedelta.cpython-311.pyc
+|   |           test_timedelta_range.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_any_index.cpython-311.pyc
+|           test_base.cpython-311.pyc
+|           test_common.cpython-311.pyc
+|           test_datetimelike.cpython-311.pyc
+|           test_engines.cpython-311.pyc
+|           test_frozen.cpython-311.pyc
+|           test_indexing.cpython-311.pyc
+|           test_index_new.cpython-311.pyc
+|           test_numpy_compat.cpython-311.pyc
+|           test_old_base.cpython-311.pyc
+|           test_setops.cpython-311.pyc
+|           test_subclass.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---indexing
+|   |   common.py
+|   |   conftest.py
+|   |   test_at.py
+|   |   test_categorical.py
+|   |   test_chaining_and_caching.py
+|   |   test_check_indexer.py
+|   |   test_coercion.py
+|   |   test_datetime.py
+|   |   test_floats.py
+|   |   test_iat.py
+|   |   test_iloc.py
+|   |   test_indexers.py
+|   |   test_indexing.py
+|   |   test_loc.py
+|   |   test_na_indexing.py
+|   |   test_partial.py
+|   |   test_scalar.py
+|   |   __init__.py
+|   |
+|   +---interval
+|   |   |   test_interval.py
+|   |   |   test_interval_new.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_interval.cpython-311.pyc
+|   |           test_interval_new.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---multiindex
+|   |   |   test_chaining_and_caching.py
+|   |   |   test_datetime.py
+|   |   |   test_getitem.py
+|   |   |   test_iloc.py
+|   |   |   test_indexing_slow.py
+|   |   |   test_loc.py
+|   |   |   test_multiindex.py
+|   |   |   test_partial.py
+|   |   |   test_setitem.py
+|   |   |   test_slice.py
+|   |   |   test_sorted.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_chaining_and_caching.cpython-311.pyc
+|   |           test_datetime.cpython-311.pyc
+|   |           test_getitem.cpython-311.pyc
+|   |           test_iloc.cpython-311.pyc
+|   |           test_indexing_slow.cpython-311.pyc
+|   |           test_loc.cpython-311.pyc
+|   |           test_multiindex.cpython-311.pyc
+|   |           test_partial.cpython-311.pyc
+|   |           test_setitem.cpython-311.pyc
+|   |           test_slice.cpython-311.pyc
+|   |           test_sorted.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           conftest.cpython-311.pyc
+|           test_at.cpython-311.pyc
+|           test_categorical.cpython-311.pyc
+|           test_chaining_and_caching.cpython-311.pyc
+|           test_check_indexer.cpython-311.pyc
+|           test_coercion.cpython-311.pyc
+|           test_datetime.cpython-311.pyc
+|           test_floats.cpython-311.pyc
+|           test_iat.cpython-311.pyc
+|           test_iloc.cpython-311.pyc
+|           test_indexers.cpython-311.pyc
+|           test_indexing.cpython-311.pyc
+|           test_loc.cpython-311.pyc
+|           test_na_indexing.cpython-311.pyc
+|           test_partial.cpython-311.pyc
+|           test_scalar.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---interchange
+|   |   test_impl.py
+|   |   test_spec_conformance.py
+|   |   test_utils.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_impl.cpython-311.pyc
+|           test_spec_conformance.cpython-311.pyc
+|           test_utils.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---internals
+|   |   test_api.py
+|   |   test_internals.py
+|   |   test_managers.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_api.cpython-311.pyc
+|           test_internals.cpython-311.pyc
+|           test_managers.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---io
+|   |   conftest.py
+|   |   generate_legacy_storage_files.py
+|   |   test_clipboard.py
+|   |   test_common.py
+|   |   test_compression.py
+|   |   test_feather.py
+|   |   test_fsspec.py
+|   |   test_gbq.py
+|   |   test_gcs.py
+|   |   test_html.py
+|   |   test_http_headers.py
+|   |   test_orc.py
+|   |   test_parquet.py
+|   |   test_pickle.py
+|   |   test_s3.py
+|   |   test_spss.py
+|   |   test_sql.py
+|   |   test_stata.py
+|   |   __init__.py
+|   |
+|   +---excel
+|   |   |   test_odf.py
+|   |   |   test_odswriter.py
+|   |   |   test_openpyxl.py
+|   |   |   test_readers.py
+|   |   |   test_style.py
+|   |   |   test_writers.py
+|   |   |   test_xlrd.py
+|   |   |   test_xlsxwriter.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_odf.cpython-311.pyc
+|   |           test_odswriter.cpython-311.pyc
+|   |           test_openpyxl.cpython-311.pyc
+|   |           test_readers.cpython-311.pyc
+|   |           test_style.cpython-311.pyc
+|   |           test_writers.cpython-311.pyc
+|   |           test_xlrd.cpython-311.pyc
+|   |           test_xlsxwriter.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---formats
+|   |   |   test_console.py
+|   |   |   test_css.py
+|   |   |   test_eng_formatting.py
+|   |   |   test_format.py
+|   |   |   test_ipython_compat.py
+|   |   |   test_printing.py
+|   |   |   test_to_csv.py
+|   |   |   test_to_excel.py
+|   |   |   test_to_html.py
+|   |   |   test_to_latex.py
+|   |   |   test_to_markdown.py
+|   |   |   test_to_string.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---style
+|   |   |   |   test_bar.py
+|   |   |   |   test_exceptions.py
+|   |   |   |   test_format.py
+|   |   |   |   test_highlight.py
+|   |   |   |   test_html.py
+|   |   |   |   test_matplotlib.py
+|   |   |   |   test_non_unique.py
+|   |   |   |   test_style.py
+|   |   |   |   test_tooltip.py
+|   |   |   |   test_to_latex.py
+|   |   |   |   test_to_string.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_bar.cpython-311.pyc
+|   |   |           test_exceptions.cpython-311.pyc
+|   |   |           test_format.cpython-311.pyc
+|   |   |           test_highlight.cpython-311.pyc
+|   |   |           test_html.cpython-311.pyc
+|   |   |           test_matplotlib.cpython-311.pyc
+|   |   |           test_non_unique.cpython-311.pyc
+|   |   |           test_style.cpython-311.pyc
+|   |   |           test_tooltip.cpython-311.pyc
+|   |   |           test_to_latex.cpython-311.pyc
+|   |   |           test_to_string.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_console.cpython-311.pyc
+|   |           test_css.cpython-311.pyc
+|   |           test_eng_formatting.cpython-311.pyc
+|   |           test_format.cpython-311.pyc
+|   |           test_ipython_compat.cpython-311.pyc
+|   |           test_printing.cpython-311.pyc
+|   |           test_to_csv.cpython-311.pyc
+|   |           test_to_excel.cpython-311.pyc
+|   |           test_to_html.cpython-311.pyc
+|   |           test_to_latex.cpython-311.pyc
+|   |           test_to_markdown.cpython-311.pyc
+|   |           test_to_string.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---json
+|   |   |   conftest.py
+|   |   |   test_compression.py
+|   |   |   test_deprecated_kwargs.py
+|   |   |   test_json_table_schema.py
+|   |   |   test_json_table_schema_ext_dtype.py
+|   |   |   test_normalize.py
+|   |   |   test_pandas.py
+|   |   |   test_readlines.py
+|   |   |   test_ujson.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_compression.cpython-311.pyc
+|   |           test_deprecated_kwargs.cpython-311.pyc
+|   |           test_json_table_schema.cpython-311.pyc
+|   |           test_json_table_schema_ext_dtype.cpython-311.pyc
+|   |           test_normalize.cpython-311.pyc
+|   |           test_pandas.cpython-311.pyc
+|   |           test_readlines.cpython-311.pyc
+|   |           test_ujson.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---parser
+|   |   |   conftest.py
+|   |   |   test_comment.py
+|   |   |   test_compression.py
+|   |   |   test_concatenate_chunks.py
+|   |   |   test_converters.py
+|   |   |   test_c_parser_only.py
+|   |   |   test_dialect.py
+|   |   |   test_encoding.py
+|   |   |   test_header.py
+|   |   |   test_index_col.py
+|   |   |   test_mangle_dupes.py
+|   |   |   test_multi_thread.py
+|   |   |   test_na_values.py
+|   |   |   test_network.py
+|   |   |   test_parse_dates.py
+|   |   |   test_python_parser_only.py
+|   |   |   test_quoting.py
+|   |   |   test_read_fwf.py
+|   |   |   test_skiprows.py
+|   |   |   test_textreader.py
+|   |   |   test_unsupported.py
+|   |   |   test_upcast.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---common
+|   |   |   |   test_chunksize.py
+|   |   |   |   test_common_basic.py
+|   |   |   |   test_data_list.py
+|   |   |   |   test_decimal.py
+|   |   |   |   test_file_buffer_url.py
+|   |   |   |   test_float.py
+|   |   |   |   test_index.py
+|   |   |   |   test_inf.py
+|   |   |   |   test_ints.py
+|   |   |   |   test_iterator.py
+|   |   |   |   test_read_errors.py
+|   |   |   |   test_verbose.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_chunksize.cpython-311.pyc
+|   |   |           test_common_basic.cpython-311.pyc
+|   |   |           test_data_list.cpython-311.pyc
+|   |   |           test_decimal.cpython-311.pyc
+|   |   |           test_file_buffer_url.cpython-311.pyc
+|   |   |           test_float.cpython-311.pyc
+|   |   |           test_index.cpython-311.pyc
+|   |   |           test_inf.cpython-311.pyc
+|   |   |           test_ints.cpython-311.pyc
+|   |   |           test_iterator.cpython-311.pyc
+|   |   |           test_read_errors.cpython-311.pyc
+|   |   |           test_verbose.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   +---dtypes
+|   |   |   |   test_categorical.py
+|   |   |   |   test_dtypes_basic.py
+|   |   |   |   test_empty.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_categorical.cpython-311.pyc
+|   |   |           test_dtypes_basic.cpython-311.pyc
+|   |   |           test_empty.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   +---usecols
+|   |   |   |   test_parse_dates.py
+|   |   |   |   test_strings.py
+|   |   |   |   test_usecols_basic.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_parse_dates.cpython-311.pyc
+|   |   |           test_strings.cpython-311.pyc
+|   |   |           test_usecols_basic.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_comment.cpython-311.pyc
+|   |           test_compression.cpython-311.pyc
+|   |           test_concatenate_chunks.cpython-311.pyc
+|   |           test_converters.cpython-311.pyc
+|   |           test_c_parser_only.cpython-311.pyc
+|   |           test_dialect.cpython-311.pyc
+|   |           test_encoding.cpython-311.pyc
+|   |           test_header.cpython-311.pyc
+|   |           test_index_col.cpython-311.pyc
+|   |           test_mangle_dupes.cpython-311.pyc
+|   |           test_multi_thread.cpython-311.pyc
+|   |           test_na_values.cpython-311.pyc
+|   |           test_network.cpython-311.pyc
+|   |           test_parse_dates.cpython-311.pyc
+|   |           test_python_parser_only.cpython-311.pyc
+|   |           test_quoting.cpython-311.pyc
+|   |           test_read_fwf.cpython-311.pyc
+|   |           test_skiprows.cpython-311.pyc
+|   |           test_textreader.cpython-311.pyc
+|   |           test_unsupported.cpython-311.pyc
+|   |           test_upcast.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---pytables
+|   |   |   common.py
+|   |   |   conftest.py
+|   |   |   test_append.py
+|   |   |   test_categorical.py
+|   |   |   test_compat.py
+|   |   |   test_complex.py
+|   |   |   test_errors.py
+|   |   |   test_file_handling.py
+|   |   |   test_keys.py
+|   |   |   test_put.py
+|   |   |   test_pytables_missing.py
+|   |   |   test_read.py
+|   |   |   test_retain_attributes.py
+|   |   |   test_round_trip.py
+|   |   |   test_select.py
+|   |   |   test_store.py
+|   |   |   test_subclass.py
+|   |   |   test_timezones.py
+|   |   |   test_time_series.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           common.cpython-311.pyc
+|   |           conftest.cpython-311.pyc
+|   |           test_append.cpython-311.pyc
+|   |           test_categorical.cpython-311.pyc
+|   |           test_compat.cpython-311.pyc
+|   |           test_complex.cpython-311.pyc
+|   |           test_errors.cpython-311.pyc
+|   |           test_file_handling.cpython-311.pyc
+|   |           test_keys.cpython-311.pyc
+|   |           test_put.cpython-311.pyc
+|   |           test_pytables_missing.cpython-311.pyc
+|   |           test_read.cpython-311.pyc
+|   |           test_retain_attributes.cpython-311.pyc
+|   |           test_round_trip.cpython-311.pyc
+|   |           test_select.cpython-311.pyc
+|   |           test_store.cpython-311.pyc
+|   |           test_subclass.cpython-311.pyc
+|   |           test_timezones.cpython-311.pyc
+|   |           test_time_series.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---sas
+|   |   |   test_byteswap.py
+|   |   |   test_sas.py
+|   |   |   test_sas7bdat.py
+|   |   |   test_xport.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_byteswap.cpython-311.pyc
+|   |           test_sas.cpython-311.pyc
+|   |           test_sas7bdat.cpython-311.pyc
+|   |           test_xport.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---xml
+|   |   |   conftest.py
+|   |   |   test_to_xml.py
+|   |   |   test_xml.py
+|   |   |   test_xml_dtypes.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_to_xml.cpython-311.pyc
+|   |           test_xml.cpython-311.pyc
+|   |           test_xml_dtypes.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           generate_legacy_storage_files.cpython-311.pyc
+|           test_clipboard.cpython-311.pyc
+|           test_common.cpython-311.pyc
+|           test_compression.cpython-311.pyc
+|           test_feather.cpython-311.pyc
+|           test_fsspec.cpython-311.pyc
+|           test_gbq.cpython-311.pyc
+|           test_gcs.cpython-311.pyc
+|           test_html.cpython-311.pyc
+|           test_http_headers.cpython-311.pyc
+|           test_orc.cpython-311.pyc
+|           test_parquet.cpython-311.pyc
+|           test_pickle.cpython-311.pyc
+|           test_s3.cpython-311.pyc
+|           test_spss.cpython-311.pyc
+|           test_sql.cpython-311.pyc
+|           test_stata.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---libs
+|   |   test_hashtable.py
+|   |   test_join.py
+|   |   test_lib.py
+|   |   test_libalgos.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_hashtable.cpython-311.pyc
+|           test_join.cpython-311.pyc
+|           test_lib.cpython-311.pyc
+|           test_libalgos.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---plotting
+|   |   common.py
+|   |   conftest.py
+|   |   test_backend.py
+|   |   test_boxplot_method.py
+|   |   test_common.py
+|   |   test_converter.py
+|   |   test_datetimelike.py
+|   |   test_groupby.py
+|   |   test_hist_method.py
+|   |   test_misc.py
+|   |   test_series.py
+|   |   test_style.py
+|   |   __init__.py
+|   |
+|   +---frame
+|   |   |   test_frame.py
+|   |   |   test_frame_color.py
+|   |   |   test_frame_groupby.py
+|   |   |   test_frame_legend.py
+|   |   |   test_frame_subplots.py
+|   |   |   test_hist_box_by.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_frame.cpython-311.pyc
+|   |           test_frame_color.cpython-311.pyc
+|   |           test_frame_groupby.cpython-311.pyc
+|   |           test_frame_legend.cpython-311.pyc
+|   |           test_frame_subplots.cpython-311.pyc
+|   |           test_hist_box_by.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           common.cpython-311.pyc
+|           conftest.cpython-311.pyc
+|           test_backend.cpython-311.pyc
+|           test_boxplot_method.cpython-311.pyc
+|           test_common.cpython-311.pyc
+|           test_converter.cpython-311.pyc
+|           test_datetimelike.cpython-311.pyc
+|           test_groupby.cpython-311.pyc
+|           test_hist_method.cpython-311.pyc
+|           test_misc.cpython-311.pyc
+|           test_series.cpython-311.pyc
+|           test_style.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---reductions
+|   |   test_reductions.py
+|   |   test_stat_reductions.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_reductions.cpython-311.pyc
+|           test_stat_reductions.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---resample
+|   |   conftest.py
+|   |   test_base.py
+|   |   test_datetime_index.py
+|   |   test_period_index.py
+|   |   test_resampler_grouper.py
+|   |   test_resample_api.py
+|   |   test_timedelta.py
+|   |   test_time_grouper.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_base.cpython-311.pyc
+|           test_datetime_index.cpython-311.pyc
+|           test_period_index.cpython-311.pyc
+|           test_resampler_grouper.cpython-311.pyc
+|           test_resample_api.cpython-311.pyc
+|           test_timedelta.cpython-311.pyc
+|           test_time_grouper.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---reshape
+|   |   test_crosstab.py
+|   |   test_cut.py
+|   |   test_from_dummies.py
+|   |   test_get_dummies.py
+|   |   test_melt.py
+|   |   test_pivot.py
+|   |   test_pivot_multilevel.py
+|   |   test_qcut.py
+|   |   test_union_categoricals.py
+|   |   test_util.py
+|   |   __init__.py
+|   |
+|   +---concat
+|   |   |   conftest.py
+|   |   |   test_append.py
+|   |   |   test_append_common.py
+|   |   |   test_categorical.py
+|   |   |   test_concat.py
+|   |   |   test_dataframe.py
+|   |   |   test_datetimes.py
+|   |   |   test_empty.py
+|   |   |   test_index.py
+|   |   |   test_invalid.py
+|   |   |   test_series.py
+|   |   |   test_sort.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_append.cpython-311.pyc
+|   |           test_append_common.cpython-311.pyc
+|   |           test_categorical.cpython-311.pyc
+|   |           test_concat.cpython-311.pyc
+|   |           test_dataframe.cpython-311.pyc
+|   |           test_datetimes.cpython-311.pyc
+|   |           test_empty.cpython-311.pyc
+|   |           test_index.cpython-311.pyc
+|   |           test_invalid.cpython-311.pyc
+|   |           test_series.cpython-311.pyc
+|   |           test_sort.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---merge
+|   |   |   test_join.py
+|   |   |   test_merge.py
+|   |   |   test_merge_asof.py
+|   |   |   test_merge_cross.py
+|   |   |   test_merge_index_as_string.py
+|   |   |   test_merge_ordered.py
+|   |   |   test_multi.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_join.cpython-311.pyc
+|   |           test_merge.cpython-311.pyc
+|   |           test_merge_asof.cpython-311.pyc
+|   |           test_merge_cross.cpython-311.pyc
+|   |           test_merge_index_as_string.cpython-311.pyc
+|   |           test_merge_ordered.cpython-311.pyc
+|   |           test_multi.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           test_crosstab.cpython-311.pyc
+|           test_cut.cpython-311.pyc
+|           test_from_dummies.cpython-311.pyc
+|           test_get_dummies.cpython-311.pyc
+|           test_melt.cpython-311.pyc
+|           test_pivot.cpython-311.pyc
+|           test_pivot_multilevel.cpython-311.pyc
+|           test_qcut.cpython-311.pyc
+|           test_union_categoricals.cpython-311.pyc
+|           test_util.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---scalar
+|   |   test_nat.py
+|   |   test_na_scalar.py
+|   |   __init__.py
+|   |
+|   +---interval
+|   |   |   test_arithmetic.py
+|   |   |   test_constructors.py
+|   |   |   test_contains.py
+|   |   |   test_formats.py
+|   |   |   test_interval.py
+|   |   |   test_overlaps.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_contains.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_interval.cpython-311.pyc
+|   |           test_overlaps.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---period
+|   |   |   test_arithmetic.py
+|   |   |   test_asfreq.py
+|   |   |   test_period.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_asfreq.cpython-311.pyc
+|   |           test_period.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---timedelta
+|   |   |   test_arithmetic.py
+|   |   |   test_constructors.py
+|   |   |   test_formats.py
+|   |   |   test_timedelta.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---methods
+|   |   |   |   test_as_unit.py
+|   |   |   |   test_round.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_as_unit.cpython-311.pyc
+|   |   |           test_round.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_timedelta.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---timestamp
+|   |   |   test_arithmetic.py
+|   |   |   test_comparisons.py
+|   |   |   test_constructors.py
+|   |   |   test_formats.py
+|   |   |   test_timestamp.py
+|   |   |   test_timezones.py
+|   |   |   __init__.py
+|   |   |
+|   |   +---methods
+|   |   |   |   test_as_unit.py
+|   |   |   |   test_normalize.py
+|   |   |   |   test_replace.py
+|   |   |   |   test_round.py
+|   |   |   |   test_timestamp_method.py
+|   |   |   |   test_to_julian_date.py
+|   |   |   |   test_to_pydatetime.py
+|   |   |   |   test_tz_convert.py
+|   |   |   |   test_tz_localize.py
+|   |   |   |   __init__.py
+|   |   |   |
+|   |   |   \---__pycache__
+|   |   |           test_as_unit.cpython-311.pyc
+|   |   |           test_normalize.cpython-311.pyc
+|   |   |           test_replace.cpython-311.pyc
+|   |   |           test_round.cpython-311.pyc
+|   |   |           test_timestamp_method.cpython-311.pyc
+|   |   |           test_to_julian_date.cpython-311.pyc
+|   |   |           test_to_pydatetime.cpython-311.pyc
+|   |   |           test_tz_convert.cpython-311.pyc
+|   |   |           test_tz_localize.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |
+|   |   \---__pycache__
+|   |           test_arithmetic.cpython-311.pyc
+|   |           test_comparisons.cpython-311.pyc
+|   |           test_constructors.cpython-311.pyc
+|   |           test_formats.cpython-311.pyc
+|   |           test_timestamp.cpython-311.pyc
+|   |           test_timezones.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           test_nat.cpython-311.pyc
+|           test_na_scalar.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---series
+|   |   test_api.py
+|   |   test_arithmetic.py
+|   |   test_constructors.py
+|   |   test_cumulative.py
+|   |   test_formats.py
+|   |   test_iteration.py
+|   |   test_logical_ops.py
+|   |   test_missing.py
+|   |   test_npfuncs.py
+|   |   test_reductions.py
+|   |   test_subclass.py
+|   |   test_ufunc.py
+|   |   test_unary.py
+|   |   test_validate.py
+|   |   __init__.py
+|   |
+|   +---accessors
+|   |   |   test_cat_accessor.py
+|   |   |   test_dt_accessor.py
+|   |   |   test_list_accessor.py
+|   |   |   test_sparse_accessor.py
+|   |   |   test_struct_accessor.py
+|   |   |   test_str_accessor.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_cat_accessor.cpython-311.pyc
+|   |           test_dt_accessor.cpython-311.pyc
+|   |           test_list_accessor.cpython-311.pyc
+|   |           test_sparse_accessor.cpython-311.pyc
+|   |           test_struct_accessor.cpython-311.pyc
+|   |           test_str_accessor.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---indexing
+|   |   |   test_datetime.py
+|   |   |   test_delitem.py
+|   |   |   test_get.py
+|   |   |   test_getitem.py
+|   |   |   test_indexing.py
+|   |   |   test_mask.py
+|   |   |   test_setitem.py
+|   |   |   test_set_value.py
+|   |   |   test_take.py
+|   |   |   test_where.py
+|   |   |   test_xs.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_datetime.cpython-311.pyc
+|   |           test_delitem.cpython-311.pyc
+|   |           test_get.cpython-311.pyc
+|   |           test_getitem.cpython-311.pyc
+|   |           test_indexing.cpython-311.pyc
+|   |           test_mask.cpython-311.pyc
+|   |           test_setitem.cpython-311.pyc
+|   |           test_set_value.cpython-311.pyc
+|   |           test_take.cpython-311.pyc
+|   |           test_where.cpython-311.pyc
+|   |           test_xs.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---methods
+|   |   |   test_add_prefix_suffix.py
+|   |   |   test_align.py
+|   |   |   test_argsort.py
+|   |   |   test_asof.py
+|   |   |   test_astype.py
+|   |   |   test_autocorr.py
+|   |   |   test_between.py
+|   |   |   test_case_when.py
+|   |   |   test_clip.py
+|   |   |   test_combine.py
+|   |   |   test_combine_first.py
+|   |   |   test_compare.py
+|   |   |   test_convert_dtypes.py
+|   |   |   test_copy.py
+|   |   |   test_count.py
+|   |   |   test_cov_corr.py
+|   |   |   test_describe.py
+|   |   |   test_diff.py
+|   |   |   test_drop.py
+|   |   |   test_dropna.py
+|   |   |   test_drop_duplicates.py
+|   |   |   test_dtypes.py
+|   |   |   test_duplicated.py
+|   |   |   test_equals.py
+|   |   |   test_explode.py
+|   |   |   test_fillna.py
+|   |   |   test_get_numeric_data.py
+|   |   |   test_head_tail.py
+|   |   |   test_infer_objects.py
+|   |   |   test_info.py
+|   |   |   test_interpolate.py
+|   |   |   test_isin.py
+|   |   |   test_isna.py
+|   |   |   test_is_monotonic.py
+|   |   |   test_is_unique.py
+|   |   |   test_item.py
+|   |   |   test_map.py
+|   |   |   test_matmul.py
+|   |   |   test_nlargest.py
+|   |   |   test_nunique.py
+|   |   |   test_pct_change.py
+|   |   |   test_pop.py
+|   |   |   test_quantile.py
+|   |   |   test_rank.py
+|   |   |   test_reindex.py
+|   |   |   test_reindex_like.py
+|   |   |   test_rename.py
+|   |   |   test_rename_axis.py
+|   |   |   test_repeat.py
+|   |   |   test_replace.py
+|   |   |   test_reset_index.py
+|   |   |   test_round.py
+|   |   |   test_searchsorted.py
+|   |   |   test_set_name.py
+|   |   |   test_size.py
+|   |   |   test_sort_index.py
+|   |   |   test_sort_values.py
+|   |   |   test_tolist.py
+|   |   |   test_to_csv.py
+|   |   |   test_to_dict.py
+|   |   |   test_to_frame.py
+|   |   |   test_to_numpy.py
+|   |   |   test_truncate.py
+|   |   |   test_tz_localize.py
+|   |   |   test_unique.py
+|   |   |   test_unstack.py
+|   |   |   test_update.py
+|   |   |   test_values.py
+|   |   |   test_value_counts.py
+|   |   |   test_view.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_add_prefix_suffix.cpython-311.pyc
+|   |           test_align.cpython-311.pyc
+|   |           test_argsort.cpython-311.pyc
+|   |           test_asof.cpython-311.pyc
+|   |           test_astype.cpython-311.pyc
+|   |           test_autocorr.cpython-311.pyc
+|   |           test_between.cpython-311.pyc
+|   |           test_case_when.cpython-311.pyc
+|   |           test_clip.cpython-311.pyc
+|   |           test_combine.cpython-311.pyc
+|   |           test_combine_first.cpython-311.pyc
+|   |           test_compare.cpython-311.pyc
+|   |           test_convert_dtypes.cpython-311.pyc
+|   |           test_copy.cpython-311.pyc
+|   |           test_count.cpython-311.pyc
+|   |           test_cov_corr.cpython-311.pyc
+|   |           test_describe.cpython-311.pyc
+|   |           test_diff.cpython-311.pyc
+|   |           test_drop.cpython-311.pyc
+|   |           test_dropna.cpython-311.pyc
+|   |           test_drop_duplicates.cpython-311.pyc
+|   |           test_dtypes.cpython-311.pyc
+|   |           test_duplicated.cpython-311.pyc
+|   |           test_equals.cpython-311.pyc
+|   |           test_explode.cpython-311.pyc
+|   |           test_fillna.cpython-311.pyc
+|   |           test_get_numeric_data.cpython-311.pyc
+|   |           test_head_tail.cpython-311.pyc
+|   |           test_infer_objects.cpython-311.pyc
+|   |           test_info.cpython-311.pyc
+|   |           test_interpolate.cpython-311.pyc
+|   |           test_isin.cpython-311.pyc
+|   |           test_isna.cpython-311.pyc
+|   |           test_is_monotonic.cpython-311.pyc
+|   |           test_is_unique.cpython-311.pyc
+|   |           test_item.cpython-311.pyc
+|   |           test_map.cpython-311.pyc
+|   |           test_matmul.cpython-311.pyc
+|   |           test_nlargest.cpython-311.pyc
+|   |           test_nunique.cpython-311.pyc
+|   |           test_pct_change.cpython-311.pyc
+|   |           test_pop.cpython-311.pyc
+|   |           test_quantile.cpython-311.pyc
+|   |           test_rank.cpython-311.pyc
+|   |           test_reindex.cpython-311.pyc
+|   |           test_reindex_like.cpython-311.pyc
+|   |           test_rename.cpython-311.pyc
+|   |           test_rename_axis.cpython-311.pyc
+|   |           test_repeat.cpython-311.pyc
+|   |           test_replace.cpython-311.pyc
+|   |           test_reset_index.cpython-311.pyc
+|   |           test_round.cpython-311.pyc
+|   |           test_searchsorted.cpython-311.pyc
+|   |           test_set_name.cpython-311.pyc
+|   |           test_size.cpython-311.pyc
+|   |           test_sort_index.cpython-311.pyc
+|   |           test_sort_values.cpython-311.pyc
+|   |           test_tolist.cpython-311.pyc
+|   |           test_to_csv.cpython-311.pyc
+|   |           test_to_dict.cpython-311.pyc
+|   |           test_to_frame.cpython-311.pyc
+|   |           test_to_numpy.cpython-311.pyc
+|   |           test_truncate.cpython-311.pyc
+|   |           test_tz_localize.cpython-311.pyc
+|   |           test_unique.cpython-311.pyc
+|   |           test_unstack.cpython-311.pyc
+|   |           test_update.cpython-311.pyc
+|   |           test_values.cpython-311.pyc
+|   |           test_value_counts.cpython-311.pyc
+|   |           test_view.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           test_api.cpython-311.pyc
+|           test_arithmetic.cpython-311.pyc
+|           test_constructors.cpython-311.pyc
+|           test_cumulative.cpython-311.pyc
+|           test_formats.cpython-311.pyc
+|           test_iteration.cpython-311.pyc
+|           test_logical_ops.cpython-311.pyc
+|           test_missing.cpython-311.pyc
+|           test_npfuncs.cpython-311.pyc
+|           test_reductions.cpython-311.pyc
+|           test_subclass.cpython-311.pyc
+|           test_ufunc.cpython-311.pyc
+|           test_unary.cpython-311.pyc
+|           test_validate.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---strings
+|   |   conftest.py
+|   |   test_api.py
+|   |   test_case_justify.py
+|   |   test_cat.py
+|   |   test_extract.py
+|   |   test_find_replace.py
+|   |   test_get_dummies.py
+|   |   test_split_partition.py
+|   |   test_strings.py
+|   |   test_string_array.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_api.cpython-311.pyc
+|           test_case_justify.cpython-311.pyc
+|           test_cat.cpython-311.pyc
+|           test_extract.cpython-311.pyc
+|           test_find_replace.cpython-311.pyc
+|           test_get_dummies.cpython-311.pyc
+|           test_split_partition.cpython-311.pyc
+|           test_strings.cpython-311.pyc
+|           test_string_array.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---tools
+|   |   test_to_datetime.py
+|   |   test_to_numeric.py
+|   |   test_to_time.py
+|   |   test_to_timedelta.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_to_datetime.cpython-311.pyc
+|           test_to_numeric.cpython-311.pyc
+|           test_to_time.cpython-311.pyc
+|           test_to_timedelta.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---tseries
+|   |   __init__.py
+|   |
+|   +---frequencies
+|   |   |   test_frequencies.py
+|   |   |   test_freq_code.py
+|   |   |   test_inference.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_frequencies.cpython-311.pyc
+|   |           test_freq_code.cpython-311.pyc
+|   |           test_inference.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---holiday
+|   |   |   test_calendar.py
+|   |   |   test_federal.py
+|   |   |   test_holiday.py
+|   |   |   test_observance.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           test_calendar.cpython-311.pyc
+|   |           test_federal.cpython-311.pyc
+|   |           test_holiday.cpython-311.pyc
+|   |           test_observance.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   +---offsets
+|   |   |   common.py
+|   |   |   test_business_day.py
+|   |   |   test_business_hour.py
+|   |   |   test_business_month.py
+|   |   |   test_business_quarter.py
+|   |   |   test_business_year.py
+|   |   |   test_common.py
+|   |   |   test_custom_business_day.py
+|   |   |   test_custom_business_hour.py
+|   |   |   test_custom_business_month.py
+|   |   |   test_dst.py
+|   |   |   test_easter.py
+|   |   |   test_fiscal.py
+|   |   |   test_index.py
+|   |   |   test_month.py
+|   |   |   test_offsets.py
+|   |   |   test_offsets_properties.py
+|   |   |   test_quarter.py
+|   |   |   test_ticks.py
+|   |   |   test_week.py
+|   |   |   test_year.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           common.cpython-311.pyc
+|   |           test_business_day.cpython-311.pyc
+|   |           test_business_hour.cpython-311.pyc
+|   |           test_business_month.cpython-311.pyc
+|   |           test_business_quarter.cpython-311.pyc
+|   |           test_business_year.cpython-311.pyc
+|   |           test_common.cpython-311.pyc
+|   |           test_custom_business_day.cpython-311.pyc
+|   |           test_custom_business_hour.cpython-311.pyc
+|   |           test_custom_business_month.cpython-311.pyc
+|   |           test_dst.cpython-311.pyc
+|   |           test_easter.cpython-311.pyc
+|   |           test_fiscal.cpython-311.pyc
+|   |           test_index.cpython-311.pyc
+|   |           test_month.cpython-311.pyc
+|   |           test_offsets.cpython-311.pyc
+|   |           test_offsets_properties.cpython-311.pyc
+|   |           test_quarter.cpython-311.pyc
+|   |           test_ticks.cpython-311.pyc
+|   |           test_week.cpython-311.pyc
+|   |           test_year.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           __init__.cpython-311.pyc
+|
++---tslibs
+|   |   test_api.py
+|   |   test_array_to_datetime.py
+|   |   test_ccalendar.py
+|   |   test_conversion.py
+|   |   test_fields.py
+|   |   test_libfrequencies.py
+|   |   test_liboffsets.py
+|   |   test_npy_units.py
+|   |   test_np_datetime.py
+|   |   test_parse_iso8601.py
+|   |   test_parsing.py
+|   |   test_period.py
+|   |   test_resolution.py
+|   |   test_strptime.py
+|   |   test_timedeltas.py
+|   |   test_timezones.py
+|   |   test_to_offset.py
+|   |   test_tzconversion.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           test_api.cpython-311.pyc
+|           test_array_to_datetime.cpython-311.pyc
+|           test_ccalendar.cpython-311.pyc
+|           test_conversion.cpython-311.pyc
+|           test_fields.cpython-311.pyc
+|           test_libfrequencies.cpython-311.pyc
+|           test_liboffsets.cpython-311.pyc
+|           test_npy_units.cpython-311.pyc
+|           test_np_datetime.cpython-311.pyc
+|           test_parse_iso8601.cpython-311.pyc
+|           test_parsing.cpython-311.pyc
+|           test_period.cpython-311.pyc
+|           test_resolution.cpython-311.pyc
+|           test_strptime.cpython-311.pyc
+|           test_timedeltas.cpython-311.pyc
+|           test_timezones.cpython-311.pyc
+|           test_to_offset.cpython-311.pyc
+|           test_tzconversion.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---util
+|   |   conftest.py
+|   |   test_assert_almost_equal.py
+|   |   test_assert_attr_equal.py
+|   |   test_assert_categorical_equal.py
+|   |   test_assert_extension_array_equal.py
+|   |   test_assert_frame_equal.py
+|   |   test_assert_index_equal.py
+|   |   test_assert_interval_array_equal.py
+|   |   test_assert_numpy_array_equal.py
+|   |   test_assert_produces_warning.py
+|   |   test_assert_series_equal.py
+|   |   test_deprecate.py
+|   |   test_deprecate_kwarg.py
+|   |   test_deprecate_nonkeyword_arguments.py
+|   |   test_doc.py
+|   |   test_hashing.py
+|   |   test_numba.py
+|   |   test_rewrite_warning.py
+|   |   test_shares_memory.py
+|   |   test_show_versions.py
+|   |   test_util.py
+|   |   test_validate_args.py
+|   |   test_validate_args_and_kwargs.py
+|   |   test_validate_inclusive.py
+|   |   test_validate_kwargs.py
+|   |   __init__.py
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_assert_almost_equal.cpython-311.pyc
+|           test_assert_attr_equal.cpython-311.pyc
+|           test_assert_categorical_equal.cpython-311.pyc
+|           test_assert_extension_array_equal.cpython-311.pyc
+|           test_assert_frame_equal.cpython-311.pyc
+|           test_assert_index_equal.cpython-311.pyc
+|           test_assert_interval_array_equal.cpython-311.pyc
+|           test_assert_numpy_array_equal.cpython-311.pyc
+|           test_assert_produces_warning.cpython-311.pyc
+|           test_assert_series_equal.cpython-311.pyc
+|           test_deprecate.cpython-311.pyc
+|           test_deprecate_kwarg.cpython-311.pyc
+|           test_deprecate_nonkeyword_arguments.cpython-311.pyc
+|           test_doc.cpython-311.pyc
+|           test_hashing.cpython-311.pyc
+|           test_numba.cpython-311.pyc
+|           test_rewrite_warning.cpython-311.pyc
+|           test_shares_memory.cpython-311.pyc
+|           test_show_versions.cpython-311.pyc
+|           test_util.cpython-311.pyc
+|           test_validate_args.cpython-311.pyc
+|           test_validate_args_and_kwargs.cpython-311.pyc
+|           test_validate_inclusive.cpython-311.pyc
+|           test_validate_kwargs.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
++---window
+|   |   conftest.py
+|   |   test_api.py
+|   |   test_apply.py
+|   |   test_base_indexer.py
+|   |   test_cython_aggregations.py
+|   |   test_dtypes.py
+|   |   test_ewm.py
+|   |   test_expanding.py
+|   |   test_groupby.py
+|   |   test_numba.py
+|   |   test_online.py
+|   |   test_pairwise.py
+|   |   test_rolling.py
+|   |   test_rolling_functions.py
+|   |   test_rolling_quantile.py
+|   |   test_rolling_skew_kurt.py
+|   |   test_timeseries_window.py
+|   |   test_win_type.py
+|   |   __init__.py
+|   |
+|   +---moments
+|   |   |   conftest.py
+|   |   |   test_moments_consistency_ewm.py
+|   |   |   test_moments_consistency_expanding.py
+|   |   |   test_moments_consistency_rolling.py
+|   |   |   __init__.py
+|   |   |
+|   |   \---__pycache__
+|   |           conftest.cpython-311.pyc
+|   |           test_moments_consistency_ewm.cpython-311.pyc
+|   |           test_moments_consistency_expanding.cpython-311.pyc
+|   |           test_moments_consistency_rolling.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |
+|   \---__pycache__
+|           conftest.cpython-311.pyc
+|           test_api.cpython-311.pyc
+|           test_apply.cpython-311.pyc
+|           test_base_indexer.cpython-311.pyc
+|           test_cython_aggregations.cpython-311.pyc
+|           test_dtypes.cpython-311.pyc
+|           test_ewm.cpython-311.pyc
+|           test_expanding.cpython-311.pyc
+|           test_groupby.cpython-311.pyc
+|           test_numba.cpython-311.pyc
+|           test_online.cpython-311.pyc
+|           test_pairwise.cpython-311.pyc
+|           test_rolling.cpython-311.pyc
+|           test_rolling_functions.cpython-311.pyc
+|           test_rolling_quantile.cpython-311.pyc
+|           test_rolling_skew_kurt.cpython-311.pyc
+|           test_timeseries_window.cpython-311.pyc
+|           test_win_type.cpython-311.pyc
+|           __init__.cpython-311.pyc
+|
+\---__pycache__
+        test_aggregation.cpython-311.pyc
+        test_algos.cpython-311.pyc
+        test_common.cpython-311.pyc
+        test_downstream.cpython-311.pyc
+        test_errors.cpython-311.pyc
+        test_expressions.cpython-311.pyc
+        test_flags.cpython-311.pyc
+        test_multilevel.cpython-311.pyc
+        test_nanops.cpython-311.pyc
+        test_optional_dependency.cpython-311.pyc
+        test_register_accessor.cpython-311.pyc
+        test_sorting.cpython-311.pyc
+        test_take.cpython-311.pyc
+        __init__.cpython-311.pyc
+

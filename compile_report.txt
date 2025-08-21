@@ -1,0 +1,1051 @@
+[BAD ] src\kiripto_nova\ai\ai_advisor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\ai\ai_advisor.py", line 2
+    prompt = f"Ba...Ÿl"+/-k: {title}\nA§"+/-klama: {description}\nBu haber yat"+/-r"+/-mc"+/-lar i§in ne ifade eder?"
+                        ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\ai\ai_strategy.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\ai\ai_strategy.py", line 15
+    print(f"ðŸ Model do"Ÿrulu"Ÿu: %{round(accuracy * 100, 2)}")
+          ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\ai\ml_filter.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\ai\ml_filter.py", line 42
+    print(f"" Tahmin: {result} | Gven: {conf}")
+                                             ^
+SyntaxError: unterminated string literal (detected at line 42)
+
+[BAD ] src\kiripto_nova\analytics\analysis_graphs.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\analysis_graphs.py", line 12
+    plt.title("Saat Bazl"+/- Sinyal Yo"Ÿunlu"Ÿu")
+                                               ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\analytics\dashboard_app.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\dashboard_app.py", line 26
+    st.subheader("ðŸ "°...Ÿlem Ge§mi...Ÿi")
+                      ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\analytics\destiny_flux_analyzer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\destiny_flux_analyzer.py", line 6
+    return destiny_signals if destiny_signals else ["ðŸ§ Kod ak"+/-...Ÿ"+/-nda ola"Ÿan¼st¼ bir kader tetikleyicisi yok."]
+                                                                                      ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\analytics\plot_performance.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\plot_performance.py", line 21
+    print(f" Toplam "...lem: {len(df)}")
+                                      ^
+SyntaxError: unterminated string literal (detected at line 21)
+
+[BAD ] src\kiripto_nova\analytics\plot_success.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\plot_success.py", line 8
+    plt.title("Sinyal Ba...Ÿar"+/- Oran"+/-")
+                                ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\analytics\report_generator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\report_generator.py", line 5
+    print("ðŸŽ G¼nl¼k Sinyal Da"Ÿ"+/-l"+/-m"+/-:\n", summary)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\analytics\visualize.py : PyCompileError: Sorry: IndentationError: unexpected indent (visualize.py, line 8)
+[BAD ] src\kiripto_nova\analytics\visualizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\visualizer.py", line 9
+    def plot_signals(df, title="ðŸ  Sinyal Grafi"Ÿi"):
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 9)
+
+[BAD ] src\kiripto_nova\analytics\visual_panel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\visual_panel.py", line 22
+    df["score"].plot(kind="hist", bins=10, title="" Sinyal Skor Yo"unlu"u", color="purple")
+                                                                                         ^
+SyntaxError: unterminated string literal (detected at line 22)
+
+[BAD ] src\kiripto_nova\analytics\wallet_activity_analyzer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\wallet_activity_analyzer.py", line 9
+    report.append(f"' Pasif "...lemler: {len(dormant_periods)}")
+                                                              ^
+SyntaxError: unterminated string literal (detected at line 9)
+
+[BAD ] src\kiripto_nova\apps\aegis_quant.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\aegis_quant.py", line 29
+    on_open=lambda ws: log("OPEN", f"{symbol.upper()} ba"Ÿlant"+/-s"+/- kuruldu."),
+                                                                                ^
+SyntaxError: unterminated string literal (detected at line 29)
+
+[BAD ] src\kiripto_nova\apps\aether_command_oracle.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\aether_command_oracle.py", line 4
+    if "Evrim Rotas"+/-" in path:
+                       ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\apps\aquatic_chain_synapse.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\aquatic_chain_synapse.py", line 4
+    connection = " Aktif Biyolojik Ba""
+                                      ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\apps\arbitrax_infinity_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\arbitrax_infinity_bot.py", line 28
+    print(f"" [{self.mode.upper()} MODE] Tüm borsa balantıları kuruldu.")
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 28)
+
+[BAD ] src\kiripto_nova\apps\arbitrax_omega_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\arbitrax_omega_bot.py", line 26
+    print(f"" [{self.mode.upper()} MODE] Spot & Futures balantısı kuruldu.")
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 26)
+
+[BAD ] src\kiripto_nova\apps\auto_deploy_bot.py : PyCompileError: Sorry: IndentationError: unexpected indent (auto_deploy_bot.py, line 6)
+[BAD ] src\kiripto_nova\apps\auto_move_map.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\auto_move_map.py", line 48
+    print(f"[OK] move_map.csv ({len(rows)-1} sat"r). E...le...meyen: {len(unmapped)} -> unmapped.txt")
+                                                                                                    ^
+SyntaxError: unterminated string literal (detected at line 48)
+
+[BAD ] src\kiripto_nova\apps\block_pulse_tracker.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\block_pulse_tracker.py", line 6
+    alerts.append("ðŸ¦ C¼zdan G¶§¼ Alg"+/-land"+/-!")
+                                        ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\boot.py : PyCompileError: Sorry: IndentationError: unexpected indent (boot.py, line 10)
+[BAD ] src\kiripto_nova\apps\bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\bot.py", line 118
+    print("  timestamp offset ayarlanamad":", e)
+                                           ^
+SyntaxError: unterminated string literal (detected at line 118)
+
+[BAD ] src\kiripto_nova\apps\box.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\box.py", line 19
+    """" top
+       ^
+SyntaxError: unterminated string literal (detected at line 19)
+
+[BAD ] src\kiripto_nova\apps\cognitive_micro_targets.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\cognitive_micro_targets.py", line 7
+    if mood in [" "lham", " Odak"] and strength > 70:
+                                ^
+SyntaxError: unterminated string literal (detected at line 7)
+
+[BAD ] src\kiripto_nova\apps\collect_modules.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\collect_modules.py", line 2
+    import sys sysconfig, os, pkgutil, importlib.metadata as md, ast, argparse, pathlib
+               ^^^^^^^^^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\community_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\community_predictor.py", line 14
+    return " DURGUN MOD: "zlemeye devam, potansiyel patlama olabilir."
+                                                                     ^
+SyntaxError: unterminated string literal (detected at line 14)
+
+[BAD ] src\kiripto_nova\apps\config.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\config.py", line 2
+    API_KEY = "BINANCE_API_KEY"°N"°_BURAYA_YAZ"
+                               ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\apps\console.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\console.py", line 1560
+    def rule(
+            ^
+SyntaxError: '(' was never closed
+
+[BAD ] src\kiripto_nova\apps\contract_behavior_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\contract_behavior_predictor.py", line 13
+    return f" Tahmin: Szle...me ileride {prediction[0]} davran"..."n" sergileyebilir."
+                                                                                     ^
+SyntaxError: unterminated string literal (detected at line 13)
+
+[BAD ] src\kiripto_nova\apps\cosmic_chain_reader.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\cosmic_chain_reader.py", line 5
+    patterns.append(" Ay tutulmas"yla tetiklenen zincir hareketi")
+                                                                ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\apps\crypto_alpha.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\crypto_alpha.py", line 417
+    print(""rnek backtest:", sym, metrics)
+                          ^
+SyntaxError: unterminated string literal (detected at line 417)
+
+[BAD ] src\kiripto_nova\apps\crypto_identitiy_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\crypto_identitiy_mapper.py", line 5
+    return "ðŸ¥ Asi "°syanc"+/-"
+                     ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\apps\daily_pnl_report.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\daily_pnl_report.py", line 40
+    print("' API key/secret bulunamad" (.env).")
+                                              ^
+SyntaxError: unterminated string literal (detected at line 40)
+
+[BAD ] src\kiripto_nova\apps\destiny_mission_encoder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\destiny_mission_encoder.py", line 5
+    missions.append("ðŸš G¶rev: Haftal"+/-k bilgi payla...Ÿ"+/-mlar"+/- ba...Ÿlat. Toplumun yarat"+/-c"+/- zekas"+/-n"+/- ate...Ÿle.")
+                                                                                                                                    ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\apps\discovery.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\discovery.py", line 13
+    """" src/
+       ^
+SyntaxError: unterminated string literal (detected at line 13)
+
+[BAD ] src\kiripto_nova\apps\eval_error_rate.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\eval_error_rate.py", line 142
+    print("Yeterli trade bulunamad"+/-.")
+                                       ^
+SyntaxError: unterminated string literal (detected at line 142)
+
+[BAD ] src\kiripto_nova\apps\evolution_timeline_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\evolution_timeline_mapper.py", line 6
+    phase = "" Stratejik Gncelleme"
+                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+
+[BAD ] src\kiripto_nova\apps\explainer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\explainer.py", line 5
+    return "Bu haber yat"+/-r"+/-mc"+/- g¼venini zay"+/-flat"+/-r, SAT sinyali uygundur."
+                                         ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\apps\futures_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\futures_bot.py", line 26
+    print(", Testnet Modunda al"..."l"yor...")
+                                            ^
+SyntaxError: unterminated string literal (detected at line 26)
+
+[BAD ] src\kiripto_nova\apps\future_splice__sim.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\future_splice__sim.py", line 5
+    futures.append(" Senaryo-Alpha: Bilgi devrimi   Yksek yarat"c"l"k & toplumsal ykseli....")
+                                                                                            ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\apps\genesis_infinity.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\genesis_infinity.py", line 20
+    return f"" Kodlama Akademisi: {input.title()} ' Tanrılar arası eitim protokolü balatıldı"
+                                                  ^
+SyntaxError: unterminated string literal (detected at line 20)
+
+[BAD ] src\kiripto_nova\apps\genex_omega_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\genex_omega_bot.py", line 55
+    print(f"\n [GENEX-Ω] Karakter Haritası " {datetime.now().strftime('%H:%M:%S')}")
+                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 55)
+
+[BAD ] src\kiripto_nova\apps\genex_v_infinity.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\genex_v_infinity.py", line 55
+    print(f"\n" [AKADEMİ] {datetime.now().strftime('%H:%M:%S')}")
+                                                               ^
+SyntaxError: unterminated string literal (detected at line 55)
+
+[BAD ] src\kiripto_nova\apps\genex_v_protocol.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\genex_v_protocol.py", line 66
+    print(f"\n  [GENEX-V] Bilinç Haritası " {datetime.now().strftime('%H:%M:%S')}")
+                                                                                 ^
+SyntaxError: unterminated string literal (detected at line 66)
+
+[BAD ] src\kiripto_nova\apps\global.news.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\global.news.py", line 1
+    GNEWS_API_KEY=99468d35e0a1d3835429ca58b51d4147
+                      ^
+SyntaxError: invalid decimal literal
+
+[BAD ] src\kiripto_nova\apps\holo_chain_healer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\holo_chain_healer.py", line 5
+    repairs.append(f" Onar"m Ba...lat"ld": {node['id']}")
+                                                       ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\apps\hunt_xp_tracker.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\hunt_xp_tracker.py", line 11
+    print(f"ðŸ " Seviye atlad"+/-n kaptan"+/-m! Yeni seviye: {self.level}")
+                                                                         ^
+SyntaxError: unterminated string literal (detected at line 11)
+
+[BAD ] src\kiripto_nova\apps\hyper_intuition_matrix.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\hyper_intuition_matrix.py", line 4
+    if log["emotion"] in [" "lham", " Tutku"] and log["feeling_strength"] > 80:
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\apps\infinity_code_catalyst.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\infinity_code_catalyst.py", line 5
+    essence.append(f"" Sonsuzluk K"v"lc"m": {signal['id']}")
+                                                          ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\apps\kryptonic_ultra.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\kryptonic_ultra.py", line 80
+    logging.error(f"[{datetime.now()}] Emir hatas"+/-: {e}")
+                                                          ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+[BAD ] src\kiripto_nova\apps\langbulgarianmodel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\langbulgarianmodel.py", line 4379
+    alphabet="''"" СТУФХЦЧШЩЪЬЮЯабвгдежзийклмноп,"...",
+                                                     ^
+SyntaxError: unterminated string literal (detected at line 4379)
+
+[BAD ] src\kiripto_nova\apps\langgreekmodel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\langgreekmodel.py", line 4127
+    alphabet="''"" ΡΣΤΥΦΧΨΩάέήίαβγδεζηθικλμνξο,"...",
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 4127)
+
+[BAD ] src\kiripto_nova\apps\langhungarianmodel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\langhungarianmodel.py", line 4379
+    alphabet="ABCDEFGHIJKLMNOPRSTUVZabcdefghijklmnoprstuvz"'",
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 4379)
+
+[BAD ] src\kiripto_nova\apps\langrussianmodel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\langrussianmodel.py", line 4379
+    alphabet="''"" СТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмноп,"...'",
+                                                       ^
+SyntaxError: unterminated string literal (detected at line 4379)
+
+[BAD ] src\kiripto_nova\apps\langthaimodel.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\langthaimodel.py", line 4379
+    alphabet="à¸à¸,à¸ƒà¸"à¸...à¸†à¸‡à¸ˆà¸‰à¸Šà¸‹à¸Œà¸à¸Žà¸à¸à¸'à¸'à¸"à¸"à¸•à¸-à¸-à¸˜à¸™à¸šà¸›à¸œà¸à¸žà¸Ÿà¸ à¸¡à¸¢à¸£à¸¤à¸¥à¸¦à¸§à¸¨à¸©à¸ªà¸"à¸¬à¸­à¸®à¸¯à¸°à¸+/-à¸²à¸³à¸´à¸µà¸¶à¸·à¸¸à¸¹à¸ºà¸¿à¹€à¹à¹,à¹ƒà¹"à¹...à¹†à¹‡à¹ˆà¹‰à¹Šà¹‹à¹Œà¹à¹Žà¹à¹à¹'à¹'à¹"à¹"à¹•à¹-à¹-à¹˜à¹™à¹šà¹›",
+                          ^
+SyntaxError: invalid character '¸' (U+00B8)
+
+[BAD ] src\kiripto_nova\apps\legend_flow_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\legend_flow_mapper.py", line 6
+    "outcome": " Yeni bir kozmos do"du",
+                                      ^
+SyntaxError: unterminated string literal (detected at line 6)
+
+[BAD ] src\kiripto_nova\apps\long_stratejisi.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\long_stratejisi.py", line 15
+    if (longSignal)
+                   ^
+SyntaxError: expected ':'
+
+[BAD ] src\kiripto_nova\apps\manipulation_detector.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\manipulation_detector.py", line 10
+    return alerts if alerts else ["" ...pheli davran"... izine rastlanmad"."]
+                                                                           ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\apps\memory_tracker.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\memory_tracker.py", line 10
+    if len(shared) >= 2 and saved_result == "ba...ar"l"":
+                                                     ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\meta_mind_director.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\meta_mind_director.py", line 7
+    if emotion in [" "lham", " Tutku"] and strength > 80:
+                                    ^
+SyntaxError: unterminated string literal (detected at line 7)
+
+[BAD ] src\kiripto_nova\apps\modules.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\modules.py", line 3
+    print("
+          ^
+SyntaxError: unterminated string literal (detected at line 3)
+
+[BAD ] src\kiripto_nova\apps\momentum_flux_decoder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\momentum_flux_decoder.py", line 14
+    window = "'' Gece Derinli"i"
+                               ^
+SyntaxError: unterminated string literal (detected at line 14)
+
+[BAD ] src\kiripto_nova\apps\multiverse_task_tree.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\multiverse_task_tree.py", line 12
+    "title": "Kader Ba...Ÿlang"+/-§",
+                                  ^
+SyntaxError: invalid character '§' (U+00A7)
+
+[BAD ] src\kiripto_nova\apps\myth_codex_builder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\myth_codex_builder.py", line 2
+    myth = ["'' [Efsane Ba...lang"c"] - Kaptan Kamal y"ld"zlar"n a"r"s"n" duydu..."]
+                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 2)
+
+[BAD ] src\kiripto_nova\apps\neural_path_finder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\neural_path_finder.py", line 4
+    if log["emotion"] in [" Tutku", " "lham"] and log["feeling_strength"] > 75:
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\apps\nova_ai_elite_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\nova_ai_elite_bot.py", line 70
+    logging.error(f"Veri ekme hatas": {e}")
+                                         ^
+SyntaxError: unterminated string literal (detected at line 70)
+
+[BAD ] src\kiripto_nova\apps\nova_command_center.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\nova_command_center.py", line 64
+    logging.error(f"Veri ekme hatas": {e}")
+                                         ^
+SyntaxError: unterminated string literal (detected at line 64)
+
+[ERR ] src\kiripto_nova\apps\nova_dashboard.py : IndentationError: unindent does not match any outer indentation level (<string>, line 48)
+[BAD ] src\kiripto_nova\apps\nova_stream.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\nova_stream.py", line 45
+    print(f"  Ba"lant" hatas": {e} | {wait}s sonra yeniden denenecek...")
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 45)
+
+[BAD ] src\kiripto_nova\apps\nova_super_bot.py : PyCompileError: Sorry: IndentationError: unexpected indent (nova_super_bot.py, line 14)
+[BAD ] src\kiripto_nova\apps\palette.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\palette.py", line 96
+    yield Segment(""", Style(color=color, bgcolor=bgcolor))
+                  ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 102)
+
+[BAD ] src\kiripto_nova\apps\panic_flatten.py : PyCompileError: Sorry: IndentationError: unexpected indent (panic_flatten.py, line 5)
+[BAD ] src\kiripto_nova\apps\preflight.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\preflight.py", line 14
+    print("python-dotenv kurulu de"il. Kurmak iin:\n  pip install python-dotenv")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\apps\progress_bar.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\progress_bar.py", line 117
+    """Update progress with new values.
+       ^^^^^^
+SyntaxError: invalid syntax
+
+[ERR ] src\kiripto_nova\apps\pro_executor.py : IndentationError: unindent does not match any outer indentation level (<string>, line 14)
+[BAD ] src\kiripto_nova\apps\pro_live.py : PyCompileError: Sorry: IndentationError: unexpected indent (pro_live.py, line 11)
+[BAD ] src\kiripto_nova\apps\pro_main.py : PyCompileError: Sorry: IndentationError: unexpected indent (pro_main.py, line 2)
+[BAD ] src\kiripto_nova\apps\quantum_fx_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\quantum_fx_bot.py", line 25
+    print(f"" [{self.mode.upper()} MODE] Binance WebSocket balantısı kuruldu.")
+                                                                             ^
+SyntaxError: unterminated string literal (detected at line 25)
+
+[BAD ] src\kiripto_nova\apps\quantum_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\quantum_predictor.py", line 13
+    return f"ðŸš, Tahmin: Yak"+/-nda ani y¼kseli...Ÿ olabilir. Sinyaller: {', '.join(strong_signals)}"
+                                          ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\apps\rearrange_v2.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\rearrange_v2.py", line 140
+    description="Proje dosyalar"+/-n"+/- move_map.csv'ye g¶re src/<paket> alt"+/-na ta...Ÿ"+/-r ve importlar"+/- g¼nceller."
+                                                                                                                  ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\apps\rule.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\rule.py", line 31
+    ) -> None:
+    ^
+SyntaxError: unmatched ')'
+
+[BAD ] src\kiripto_nova\apps\run_all_tests.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\run_all_tests.py", line 11
+    echo "" Testler balatılıyor..."
+                                  ^
+SyntaxError: unterminated string literal (detected at line 11)
+
+[BAD ] src\kiripto_nova\apps\run_gate.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\run_gate.py", line 64
+    raise SystemExit("' API anahtarlar" yok! .env iindeki BINANCE_API_KEY / BINANCE_API_SECRET girilmeli.")
+                                                                                                         ^
+SyntaxError: unterminated string literal (detected at line 64)
+
+[BAD ] src\kiripto_nova\apps\run_guard.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\run_guard.py", line 2
+    import os sys, subprocess
+              ^^^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\safe_live_paper_trader.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\safe_live_paper_trader.py", line 152
+    logging.info(f"{len(syms)} sembol izleniyor (canl"+/- veri, ka"Ÿ"+/-t i...Ÿlem).")
+                                                                                    ^
+SyntaxError: unterminated string literal (detected at line 152)
+
+[BAD ] src\kiripto_nova\apps\scan_eval.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\scan_eval.py", line 116
+    ap.add_argument("--out", default="", help="CSV dosya ad"+/- (opsiyonel)")
+                                                                           ^
+SyntaxError: unterminated string literal (detected at line 116)
+
+[BAD ] src\kiripto_nova\apps\scheduler.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\scheduler.py", line 6
+    print(", Veri analizi ba...lad"...")
+                                      ^
+SyntaxError: unterminated string literal (detected at line 6)
+
+[BAD ] src\kiripto_nova\apps\short_sinyal_stratejisi.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\short_sinyal_stratejisi.py", line 11
+    if (shortCondition)
+                       ^
+SyntaxError: expected ':'
+
+[BAD ] src\kiripto_nova\apps\smart_contract_scanner.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\smart_contract_scanner.py", line 7
+    alerts.append(f"  Riskli yap" bulundu: {term}")
+                                                 ^
+SyntaxError: unterminated string literal (detected at line 7)
+
+[ERR ] src\kiripto_nova\apps\smoke_check.py : IndentationError: unindent does not match any outer indentation level (<string>, line 67)
+[BAD ] src\kiripto_nova\apps\subchain_emotion_decoder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\subchain_emotion_decoder.py", line 11
+    return f"ðŸ'"ï¸ Zincir duygusu: {dominant.upper()}"
+                  ^
+SyntaxError: invalid character '¸' (U+00B8)
+
+[BAD ] src\kiripto_nova\apps\sync_mission_map.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\sync_mission_map.py", line 4
+    if log["emotion"] in [" "lham", " Tutku"] and log["feeling_strength"] > 75:
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\apps\task_efficiency_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\task_efficiency_predictor.py", line 8
+    if mood in [" "lham", " Tutku"] and strength > 70:
+                                 ^
+SyntaxError: unterminated string literal (detected at line 8)
+
+[BAD ] src\kiripto_nova\apps\telegram_alert.py : PyCompileError: Sorry: IndentationError: unexpected indent (telegram_alert.py, line 3)
+[BAD ] src\kiripto_nova\apps\telegram_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\telegram_bot.py", line 2
+    message = f"{signal} ðŸ¢\nBa...Ÿl"+/-k: {title}\nKaynak: {source}"
+                                       ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\testarena_x_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\testarena_x_bot.py", line 27
+    print(f"" Fibonacci {level:.3f} seviyesi: {target:.2f}")
+                                ^
+SyntaxError: invalid decimal literal
+
+[BAD ] src\kiripto_nova\apps\text.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\text.py", line 1237
+    character: str = "",",
+                        ^
+SyntaxError: unterminated string literal (detected at line 1237)
+
+[BAD ] src\kiripto_nova\apps\trade_journal.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\trade_journal.py", line 38
+    print(f"ðŸ Kay"+/-t: {symbol} | {direction} | PnL: {pnl}")
+                                                            ^
+SyntaxError: unterminated string literal (detected at line 38)
+
+[BAD ] src\kiripto_nova\apps\tree.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\tree.py", line 88
+    ("    ", "",   ", """" ", """"" "),
+                                    ^
+SyntaxError: unterminated string literal (detected at line 88)
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v3.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v3.py", line 11
+    from loguru  import kiripto_nova.apps.logger as log
+                                    ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v4.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v4.py", line 337
+    if now_rsi<=70 and prev_rsi>70 and short_core: short_trig=True; reasons.append("RSI"70")
+                                                                                          ^
+SyntaxError: unterminated string literal (detected at line 337)
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v5.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v5.py", line 405
+    if rsi.iloc[-2]>70 and rsi.iloc[-1]<=70 and short_core: short_trig=True; reasons.append("RSI"70"); conf+=0.15
+                                                                                                   ^
+SyntaxError: unterminated string literal (detected at line 405)
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v6.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v6.py", line 179
+    if rsi.iloc[-2]>70 and rsi.iloc[-1]<=70 and short_core: S=True; reasons.append("RSI"70"); conf+=0.15
+                                                                                          ^
+SyntaxError: unterminated string literal (detected at line 179)
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v7.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v7.py", line 177
+    if rsi.iloc[-2]>70 and rsi.iloc[-1]<=70 and short_core: S=True; conf+=0.15; rs.append("RSI"70")
+                                                                                                 ^
+SyntaxError: unterminated string literal (detected at line 177)
+
+[BAD ] src\kiripto_nova\apps\ultra_elite_allinone_v8.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ultra_elite_allinone_v8.py", line 197
+    if rsi.iloc[-2]>70 and rsi.iloc[-1]<=70 and short_core: S=True; conf+=0.15; rs.append("RSI"70")
+                                                                                                 ^
+SyntaxError: unterminated string literal (detected at line 197)
+
+[BAD ] src\kiripto_nova\apps\wepsocet.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\wepsocet.py", line 46
+    on_open=lambda ws: log("OPEN", f"{symbol.upper()} ba"Ÿlant"+/-s"+/- kuruldu."),
+                                                                                ^
+SyntaxError: unterminated string literal (detected at line 46)
+
+[BAD ] src\kiripto_nova\apps\ws_multi_price_stream.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ws_multi_price_stream.py", line 38
+    print(", WebSocket ba"lant"s" ba...lat"ld".")
+                                               ^
+SyntaxError: unterminated string literal (detected at line 38)
+
+[BAD ] src\kiripto_nova\apps\ws_price_stream.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\ws_price_stream.py", line 24
+    print(f", WebSocket ba...lat"l"yor: {SYMBOL.upper()} anl"k fiyat ak"..."...\n")
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\apps\zipp.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\zipp.py", line 161
+    """" e.txt
+       ^
+SyntaxError: unterminated string literal (detected at line 161)
+
+[BAD ] src\kiripto_nova\apps\_emoji_codes.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\_emoji_codes.py", line 454
+    "bell": """",
+               ^
+SyntaxError: unterminated string literal (detected at line 454)
+
+[BAD ] src\kiripto_nova\apps\_spinners.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\_spinners.py", line 30
+    "frames": "          "",
+                          ^
+SyntaxError: unterminated string literal (detected at line 30)
+
+[BAD ] src\kiripto_nova\apps\__main__.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\apps\__main__.py", line 30
+    yield Segment(""", Style(color=color, bgcolor=bgcolor))
+                 ^
+SyntaxError: '(' was never closed
+
+[BAD ] src\kiripto_nova\backtesting\backtester.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\backtesting\backtester.py", line 68
+    "Toplam "°...Ÿlem": total,
+             ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\backtesting\testnet_trade_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\backtesting\testnet_trade_bot.py", line 83
+    logging.warning(f"Hedge mode ayarlanamad" (devam ediyorum): {e}")
+                                                                   ^
+SyntaxError: unterminated string literal (detected at line 83)
+
+[BAD ] src\kiripto_nova\core\alpha_engine.py : PyCompileError: Sorry: IndentationError: unexpected indent (alpha_engine.py, line 11)
+[BAD ] src\kiripto_nova\core\crosschain_intelligence_core.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\crosschain_intelligence_core.py", line 14
+    return insights if insights else ["ðŸ¡ Zincirler aras"+/- stratejik etkile...Ÿim d¼...Ÿ¼k."]
+                                                                                      ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\core\crypto_tracker_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\crypto_tracker_engine.py", line 10
+    return "ðŸŸ¢ Normal ak"+/-...Ÿ devam ediyor."
+                                                ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[ERR ] src\kiripto_nova\core\decision_engine.py : IndentationError: unindent does not match any outer indentation level (<string>, line 11)
+[BAD ] src\kiripto_nova\core\deep_insight_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\deep_insight_engine.py", line 13
+    return "Bilgi seviyesi hen¼z kritik e...Ÿikte de"Ÿil."
+                                                         ^
+SyntaxError: unterminated string literal (detected at line 13)
+
+[BAD ] src\kiripto_nova\core\inner_hero_script_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\inner_hero_script_engine.py", line 4
+    if log["emotion"] in ["ðŸ¥ Tutku", "ðŸ¡ "°lham"]:
+                                             ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\core\orakul_omega_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\orakul_omega_engine.py", line 35
+    return f"" Kuantum Ritüel: {input.upper()} ' tanrısal enerji döngüsü aktive edildi"
+                                               ^
+SyntaxError: unterminated string literal (detected at line 35)
+
+[BAD ] src\kiripto_nova\core\test_position_manager.py : PyCompileError: Sorry: IndentationError: unexpected indent (test_position_manager.py, line 5)
+[BAD ] src\kiripto_nova\core\trade_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\trade_engine.py", line 22
+    print(f"ðŸš¨ "°...Ÿlem hatas"+/-: {e}")
+                  ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\data\languages.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\data\languages.py", line 76
+    alphabet=","...'",
+                   ^
+SyntaxError: unterminated string literal (detected at line 76)
+
+[BAD ] src\kiripto_nova\data\uts46data.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\data\uts46data.py", line 2965
+    (0x2FA2, 'M', ',''),
+                     ^
+SyntaxError: unterminated string literal (detected at line 2965)
+
+[BAD ] src\kiripto_nova\execution\orchestrator_stream.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\execution\orchestrator_stream.py", line 252
+    print("" WS ba"l".")
+                      ^
+SyntaxError: unterminated string literal (detected at line 252)
+
+[BAD ] src\kiripto_nova\execution\scheduler_pro.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\execution\scheduler_pro.py", line 27
+    print(f" [{now}] Tarama ba...l"yor...")
+                                         ^
+SyntaxError: unterminated string literal (detected at line 27)
+
+[BAD ] src\kiripto_nova\indicators\unicode.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\indicators\unicode.py", line 93
+    + ","...''"" "
+                 ^
+SyntaxError: unterminated string literal (detected at line 93)
+
+[BAD ] src\kiripto_nova\risk\risk_grid_intelligence.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\risk\risk_grid_intelligence.py", line 4
+    risks.append(" Zay"f Oracle ba""ml"l"""")
+                                         ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 22)
+
+[BAD ] src\kiripto_nova\risk\risk_guard.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\risk\risk_guard.py", line 127
+    tg(f"{msg}   " Limit a..."lmad".")
+                                    ^
+SyntaxError: unterminated string literal (detected at line 127)
+
+[BAD ] src\kiripto_nova\risk\test_risk_and_filters.py : PyCompileError: Sorry: IndentationError: unexpected indent (test_risk_and_filters.py, line 7)
+[BAD ] src\kiripto_nova\signals\astro_signal_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\astro_signal_mapper.py", line 12
+    plt.title("ðŸ'' Y"+/-ld"+/-zlar Aras"+/- Sinyal Haritas"+/-")
+                       ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\signals\ethical_signal_analyzer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\ethical_signal_analyzer.py", line 10
+    signals.append("" G yo"unla...mas" riski (DAO)")
+                                                  ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\signals\galactic_signal_router.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\galactic_signal_router.py", line 26
+    print("ðŸ¡ Sinyal Karar"+/-:", router.route(signals))
+                                ^
+SyntaxError: unterminated string literal (detected at line 26)
+
+[BAD ] src\kiripto_nova\signals\get_news.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\get_news.py", line 42
+    print(f" GNews eri...im hatas": {response.status_code}")
+                                                          ^
+SyntaxError: unterminated string literal (detected at line 42)
+
+[BAD ] src\kiripto_nova\signals\signal_loop.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_loop.py", line 114
+    push(f"  ayn" sinyal tekrar ({signal}), bekliyorum.")
+                                                       ^
+SyntaxError: unterminated string literal (detected at line 114)
+
+[BAD ] src\kiripto_nova\signals\signal_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_predictor.py", line 3
+    return "y¼ksek ba...Ÿar"+/- olas"+/-l"+/-"Ÿ"+/-"
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 3)
+
+[BAD ] src\kiripto_nova\signals\signal_router.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_router.py", line 19
+    print(" Sinyaller al"n"yor ve filtreleniyor...")
+          ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\signals\signal_scanner.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_scanner.py", line 43
+    print(f"\n [{now}] {SYMBOL} tm zaman dilimlerinde taran"yor...")
+                                                                  ^
+SyntaxError: unterminated string literal (detected at line 43)
+
+[BAD ] src\kiripto_nova\signals\signal_scanner_multi.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_scanner_multi.py", line 63
+    print(f"\n  Genel "zet:")
+                           ^
+SyntaxError: unterminated string literal (detected at line 63)
+
+[BAD ] src\kiripto_nova\signals\signal_symphony_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\signals\signal_symphony_engine.py", line 4
+    score += "ðŸŽº Ba...Ÿlang"+/-§: Etki trompeti\n"
+                                 ^
+SyntaxError: invalid character '§' (U+00A7)
+
+[BAD ] src\kiripto_nova\strategies\basic_strategy.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\basic_strategy.py", line 20
+    print(f"Strateji Karar"+/-: {signal}")
+                                        ^
+SyntaxError: unterminated string literal (detected at line 20)
+
+[BAD ] src\kiripto_nova\strategies\strategic_evolution_map.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_evolution_map.py", line 11
+    plt.title("ðŸ¥ Strateji Ba...Ÿar"+/- Is"+/- Haritas"+/-")
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 11)
+
+[BAD ] src\kiripto_nova\strategies\strategic_feelings_sim.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_feelings_sim.py", line 2
+    { "id": "G-1", "mission": "ðŸ' Toplumun dayan"+/-kl"+/-l"+/-"Ÿ"+/- ¼zerine veri analizi yap." },
+                                                                       ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\strategies\strategy_fingerprint_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategy_fingerprint_mapper.py", line 13
+    return fingerprint if fingerprint else ["ðŸ Belirgin strateji izi bulunamad"+/-."]
+                                                                                    ^
+SyntaxError: unterminated string literal (detected at line 13)
+
+[BAD ] src\kiripto_nova\strategies\strategy_optimizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategy_optimizer.py", line 58
+    print("  En "yi 5 Sonu:")
+                           ^
+SyntaxError: unterminated string literal (detected at line 58)
+
+[BAD ] src\kiripto_nova\strategies\temporal_strategy_planner.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\temporal_strategy_planner.py", line 6
+    "Monday": "temkinli al"+/-m",
+                               ^
+SyntaxError: unterminated string literal (detected at line 6)
+
+[BAD ] src\kiripto_nova\strategies\test_strategy_executor.py : PyCompileError: Sorry: IndentationError: unexpected indent (test_strategy_executor.py, line 6)
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\celestial_cognition_beacon.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\celestial_cognition_beacon.py", line 12
+    'ðŸ'Ÿ Yay"+/-nlanan Zek¢ Frekans"+/-': neural_freq,
+                                        ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\chrono_synaptic_memory_forge.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\chrono_synaptic_memory_forge.py", line 16
+    'Durum': ' ' Stratejik Zaman A"" Aktif'
+                                          ^
+SyntaxError: unterminated string literal (detected at line 16)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\command_dashboard.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\command_dashboard.py", line 21
+    plt.title(" Strateji Performans" Zaman izgisi")
+                                                 ^
+SyntaxError: unterminated string literal (detected at line 21)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\cosmic_control_app.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\cosmic_control_app.py", line 12
+    push_alert(f", Yeni "...lem Ba...lat"ld": {data['symbol']} | {data['action']}")
+                                                                                 ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\cosmic_creation_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\cosmic_creation_engine.py", line 9
+    'Durum': 'ðŸ'  Kozmik Yarat"+/-m Motoru Aktif'
+                               ^
+SyntaxError: unterminated string literal (detected at line 9)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\cosmic_decision_matrix.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\cosmic_decision_matrix.py", line 11
+    'Durum': 'ðŸ' Stratejik Ger§eklik Sim¼lasyonu Tamamland"+/-'
+                               ^
+SyntaxError: invalid character '§' (U+00A7)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\cosmic_trader.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\cosmic_trader.py", line 15
+    return " Bekleniyor , Gvenilir strateji bulunamad""
+                                                      ^
+SyntaxError: unterminated string literal (detected at line 15)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\dimensional_rift_initiator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\dimensional_rift_initiator.py", line 9
+    ''' Boyutlar Aras" Ba"lant"lar': rift_outcome,
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 22)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\echo_particle_synthesizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\echo_particle_synthesizer.py", line 8
+    ''' Yeni D...nce Haritas"': 'Olu...turuldu',
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 20)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\futures_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\futures_bot.py", line 21
+    print(" GEREK (Mainnet) Modunda al"..."l"yor! D"KKATL" OLUN! ")
+                                                                 ^
+SyntaxError: unterminated string literal (detected at line 21)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\genesis_fractal_expansion_protocol.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\genesis_fractal_expansion_protocol.py", line 10
+    'ðŸ', Fraktal Yay"+/-l"+/-m Ak"+/-...Ÿ"+/-': fractal_stream,
+                                              ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\impact_wave_simulator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\impact_wave_simulator.py", line 18
+    'Durum': 'ðŸ' K¢r Etki Haritas"+/- Olu...Ÿturuldu'
+                   ^
+SyntaxError: invalid character '¢' (U+00A2)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\infinite_echo_codex.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\infinite_echo_codex.py", line 7
+    'ðŸ'  Sonsuz Yank"+/- Frekans"+/-': infinite_echo,
+                                     ^
+SyntaxError: unterminated string literal (detected at line 7)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\intergalactic_envoy_simulator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\intergalactic_envoy_simulator.py", line 12
+    'ðŸ' Olu...Ÿan "°ttifaklar': alliances,
+                   ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\intergalactic_strategy_canvas.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\intergalactic_strategy_canvas.py", line 10
+    'ðŸ' Veri Taban"+/-': quantum_data,
+                   ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\interstellar_exchange.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\interstellar_exchange.py", line 18
+    '  Entegrasyon Durumu': '" Kabul Edildi' if result['score'] > 0.8 else '' Reddedildi'
+                                                                                        ^
+SyntaxError: unterminated string literal (detected at line 18)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\intuition_timer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\intuition_timer.py", line 14
+    '' Ay Evresi': phase,
+                ^
+SyntaxError: unterminated string literal (detected at line 14)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\learn_best_signal.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\learn_best_signal.py", line 5
+    return f"En verimli sinyal: {optimal_signals.index[0]} / Kazanma say"+/-s"+/-: {optimal_signals.iloc[0]}"
+                                                                          ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\leverage_guardian_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\leverage_guardian_bot.py", line 38
+    ''' Bilinsel Koruma': 'Aktif',
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 50)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\multi_position_manager.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\multi_position_manager.py", line 14
+    '' Tavsiye': move['recommended_action'],
+                                         ^
+SyntaxError: unterminated string literal (detected at line 14)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\operation_simulation_arena.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\operation_simulation_arena.py", line 11
+    ' Senaryo Tutarl"l"""': strategy['', Senaryo Tutarl"l"""'],
+                                                            ^
+SyntaxError: unterminated string literal (detected at line 11)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\post_genesis_reflexion_codex.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\post_genesis_reflexion_codex.py", line 12
+    'ðŸ', Zihin Geri Besleme D¶ng¼s¼': feedback_loop,
+                              ^
+SyntaxError: invalid character '¶' (U+00B6)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\protocol_zero_genesis_mind_loop.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\protocol_zero_genesis_mind_loop.py", line 12
+    'Durum': ''  Zihin Dngs Ba...lat"ld"'
+                                        ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\quantum_decision_wave.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\quantum_decision_wave.py", line 15
+    'ðŸ', Niyet Karma...Ÿ"+/-kl"+/-"Ÿ"+/-': entangled,
+                                         ^
+SyntaxError: unterminated string literal (detected at line 15)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\quantum_directive_nexus.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\quantum_directive_nexus.py", line 10
+    '', oklu Evren Stratejileri': strategy_matrix,
+                               ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\quantum_reflection_canvas.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\quantum_reflection_canvas.py", line 9
+    'Durum': 'ðŸ"'ï¸ Kozmosun G¶rsel ...žiiri Olu...Ÿturuldu'
+                   ^
+SyntaxError: invalid character '¸' (U+00B8)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\quantum_strategy_binder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\quantum_strategy_binder.py", line 17
+    ''' Kuantum Strateji A""': quantum_strategy,
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 31)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\sentient_genesis_framework.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\sentient_genesis_framework.py", line 23
+    ''' Evrensel Ba"lanma': 'Tamamland"',
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 36)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\sentient_leverage_sniper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\sentient_leverage_sniper.py", line 42
+    ''' Bilinsel Koruma': 'Aktif',
+    ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 54)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\strategic_fusion_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\strategic_fusion_engine.py", line 19
+    '', Senaryo Tutarl"l"""': unified_strategy['thesis_alignment'],
+                                                                ^
+SyntaxError: unterminated string literal (detected at line 19)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\strategic_singularity_gateway.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\strategic_singularity_gateway.py", line 10
+    '' Birle...ik Zek Platformu': singularity_core,
+                               ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\strategy_executor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\strategy_executor.py", line 23
+    'status': '' REDDED"LD"'
+                           ^
+SyntaxError: unterminated string literal (detected at line 23)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\universal_balance_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\universal_balance_engine.py", line 16
+    return " BUY , Dengeli S"rama"
+                                 ^
+SyntaxError: unterminated string literal (detected at line 16)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\universal_flow_analyzer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\universal_flow_analyzer.py", line 8
+    'ðŸ'  Yeni Yarat"+/-m D¶ng¼leri': 'Ba...Ÿlat"+/-ld"+/-',
+                                                      ^
+SyntaxError: unterminated string literal (detected at line 8)
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\whale_alert.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\whale_alert.py", line 23
+    text = (f"ðŸ Balina Alarm"+/-:\n"
+                               ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\__init__.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\__init__.py", line 1
+    src\kiripto_nova\strategies\strategic_ai_engine.py
+        ^
+SyntaxError: unexpected character after line continuation character
+
+[BAD ] src\kiripto_nova\strategies\strategic_ai_engine\rust_indicators\run_bias_gated_strategy.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\strategies\strategic_ai_engine\rust_indicators\run_bias_gated_strategy.py", line 124
+    print(f"[bias] {len(df)} sat"r eklendi -> {BIAS_CSV}")
+                                                        ^
+SyntaxError: unterminated string literal (detected at line 124)
+
+[BAD ] src\kiripto_nova\exchanges\binance\binance_futures_boot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\exchanges\binance\binance_futures_boot.py", line 24
+    print("Hedge mode ayarlanamad"+/-:", e)
+                                      ^
+SyntaxError: unterminated string literal (detected at line 24)
+
+[BAD ] src\kiripto_nova\exchanges\binance\binance_order_test.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\exchanges\binance\binance_order_test.py", line 22
+    print("" Emir ba...ar"yla gnderildi:")
+          ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\adaptive_task_engine.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\adaptive_task_engine.py", line 1
+    def adaptive_task_engine(logs, previous_success, boost_emotion="ðŸ¡ "°lham"):
+                                                                         ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\adaptive_trader_gui.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\adaptive_trader_gui.py", line 16
+    self.layout.addWidget(QtWidgets.QLabel("" Risk Seviyesi"))
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 16)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\anamaly_trade_orchestrator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\anamaly_trade_orchestrator.py", line 12
+    decision = f" {asset}: Ticaret Ask"ya Al"nd" (Risk={risk})"
+                                                              ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\chain_listener.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\chain_listener.py", line 9
+    print(f" Yeni Blok: {block.number} , "...lem Say"s": {len(block.transactions)}")
+                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 9)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\chain_momentum_bot.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\chain_momentum_bot.py", line 22
+    print(f" Canl" Tepki: {tx['from']}  {tx['to']} | De"er: {eth_value} ETH")
+          ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\cognitive_flow_optimizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\cognitive_flow_optimizer.py", line 2
+    flow_mode = " Hedefe kilitlen , Kod ak"..." ba...las"n!"
+                                                           ^
+SyntaxError: unterminated string literal (detected at line 2)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\emotion_sync_adapter.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\emotion_sync_adapter.py", line 2
+    emotion_check = "" Uyumluysa senkronize et, de"ilse beklet"
+                       ^^^^^^^^^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\emotive_flux_visualizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\emotive_flux_visualizer.py", line 14
+    plt.title(" Duygu Ak"..." Zaman izelgesi", fontsize=14)
+              ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\insight_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\insight_predictor.py", line 4
+    prediction = " A"l"m yakla..."yor , Grev ner"
+                                                ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\liquidity_wave_detector.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\liquidity_wave_detector.py", line 13
+    "message": f"  Likidite Dalgas" Alg"land": Blok {blocks[i]['number']} | Art"...: {delta}"
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\next_mission_oracle.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\next_mission_oracle.py", line 4
+    if intuition_map[task] == " F"rsat Penceresi":
+                                                ^
+SyntaxError: unterminated string literal (detected at line 4)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\NovaStrategos_v10X_ultra_onchain.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\NovaStrategos_v10X_ultra_onchain.py", line 181
+    if 45<=f["rsi"]<=65 and (0.5<f["ew_vol"]<2.5):   return "Dalgal""
+                                                                    ^
+SyntaxError: unterminated string literal (detected at line 181)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\NovaTraderDashboard_vX.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\NovaTraderDashboard_vX.py", line 44
+    return f" Grev '{task_id}': "zleme nerilir."
+                                               ^
+SyntaxError: unterminated string literal (detected at line 44)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\Nova_StrategosPrime_v12_onchain.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\Nova_StrategosPrime_v12_onchain.py", line 173
+    if 45<=f["rsi"]<=65 and (0.5<f["ew_vol"]<2.5):   return "Dalgal""
+                                                                    ^
+SyntaxError: unterminated string literal (detected at line 173)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\Nova_Strategos_v10_offchain.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\Nova_Strategos_v10_offchain.py", line 47
+    print(f"[Persist] Kaydetme hatas": {e}")
+                                          ^
+SyntaxError: unterminated string literal (detected at line 47)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\nova_ultra_single.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\nova_ultra_single.py", line 355
+    if proto_action=="SELL" and (confidence>0.6): return "Kademeli "k"..., koruma odakl""
+                                                                                        ^
+SyntaxError: unterminated string literal (detected at line 355)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\realtime_chain_listener.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\realtime_chain_listener.py", line 14
+    print(f" {trade['wallet']} i...lem ald": {trade['action']} | Gven: {trade['confidence']}")
+                                                                                            ^
+SyntaxError: unterminated string literal (detected at line 14)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\signal_dashboard.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\signal_dashboard.py", line 7
+    chain = st.selectbox("" Zincir Seimi", ["Ethereum", "Arbitrum", "Solana", "Goerli"])
+                                                                                     ^
+SyntaxError: unterminated string literal (detected at line 7)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\signal_dashboard_streamlit_plotly.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\signal_dashboard_streamlit_plotly.py", line 16
+    chain = st.selectbox("" Zincir Seimi", list(theme_colors.keys()))
+                                        ^
+SyntaxError: unterminated string literal (detected at line 16)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\signal_report_generator.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\signal_report_generator.py", line 24
+    print(f"" PDF raporu olu...turuldu: {filename}")
+                                                  ^
+SyntaxError: unterminated string literal (detected at line 24)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\signal_tokenizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\signal_tokenizer.py", line 17
+    print(f"ðŸª" Token dosyas"+/- olu...Ÿturuldu: {filename}")
+          ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\strategic_position_builder.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\strategic_position_builder.py", line 29
+    "note": "Sinyal belirsiz, pozisyon al"+/-nmad"+/-."
+                                           ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\strategy_trainer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\strategy_trainer.py", line 10
+    print(f"ðŸŽ¯ Stratejinin ba...Ÿar"+/- oran"+/-: %{round(success_rate * 100, 2)}")
+                                       ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\synaptic_command_matrix.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\synaptic_command_matrix.py", line 1
+    def synaptic_command(logs, emotion_focus=" "lham", threshold=75):
+                                                    ^
+SyntaxError: unterminated string literal (detected at line 1)
+
+[ERR ] src\kiripto_nova\core\neural_symphony_engine\test_modules.py : PermissionError: [Errno 13] Permission denied: 'C:\\Users\\kamal\\Desktop\\Kiripto_Nova\\src\\kiripto_nova\\core\\neural_symphony_engine\\test_modules.py'
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\tx_executor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\tx_executor.py", line 21
+    print(f", "...lem Ba...lat"ld"   {web3.toHex(tx_hash)}")
+                                                          ^
+SyntaxError: unterminated string literal (detected at line 21)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\universal_chain_listener.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\universal_chain_listener.py", line 24
+    print(f" {chain_name} Blok #{block.number} | "...lem: {len(block.transactions)}")
+                                                                                   ^
+SyntaxError: unterminated string literal (detected at line 24)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\wallet_behavior_predictor.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\wallet_behavior_predictor.py", line 11
+    predictions[wallet] = f"ðŸ¥ Tahmin: Yak"+/-nda b¼y¼k hareket bekleniyor (Skor={score})"
+                                                    ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\ai_kod_sistemi\crypto_hunter.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\ai_kod_sistemi\crypto_hunter.py", line 11
+    print(f"ðŸŽ¯ "°z bulundu: {trace} - {timestamp}")
+                  ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\ai_kod_sistemi\optimizer.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\ai_kod_sistemi\optimizer.py", line 18
+    return "Kodun async yap"+/-lmas"+/-, d¶ng¼lerin sadele...Ÿtirilmesi veya cache eklenmesi ¶nerilir."
+                             ^
+SyntaxError: invalid syntax
+
+[BAD ] src\kiripto_nova\core\neural_symphony_engine\test_modules.py\test_modules.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\core\neural_symphony_engine\test_modules.py\test_modules.py", line 4
+    emotion = "ðŸ¡ "°lham"
+                    ^
+SyntaxError: invalid character '°' (U+00B0)
+
+[BAD ] src\kiripto_nova\analytics\onchain\chain_convergence_forge.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\onchain\chain_convergence_forge.py", line 10
+    print("ðŸ'' Zincir Birle...Ÿim Haritas"+/-:")
+                                               ^
+SyntaxError: unterminated string literal (detected at line 10)
+
+[BAD ] src\kiripto_nova\analytics\onchain\chain_destiny_mapper.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\onchain\chain_destiny_mapper.py", line 5
+    destiny_paths.append(f"'  Evrim Rotas": {evt['id']}")
+                                                       ^
+SyntaxError: unterminated string literal (detected at line 5)
+
+[BAD ] src\kiripto_nova\analytics\onchain\chain_hunter.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\onchain\chain_hunter.py", line 3
+    print("ðŸ£ Gizlenmi...Ÿ yap"+/- bulundu: Kod manip¼lasyonu ...Ÿ¼phesi!")
+                                                      ^
+SyntaxError: invalid character '¼' (U+00BC)
+
+[BAD ] src\kiripto_nova\analytics\onchain\chain_mutation_tracker.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\onchain\chain_mutation_tracker.py", line 12
+    changes.append(f" Yeni sat"r {i}: {line}")
+                                            ^
+SyntaxError: unterminated string literal (detected at line 12)
+
+[BAD ] src\kiripto_nova\analytics\onchain\chain_radar_gui.py : PyCompileError:   File "C:\Users\kamal\Desktop\Kiripto_Nova\src\kiripto_nova\analytics\onchain\chain_radar_gui.py", line 5
+    root.title("ðŸ§­ Kripto Radar Ekran"+/-")
+                                           ^
+SyntaxError: unterminated string literal (detected at line 5)

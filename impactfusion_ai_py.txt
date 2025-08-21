@@ -1,0 +1,23 @@
+class StrategicProfile:
+    def __init__(self, name, impact, growth, synergy, crisis_score):
+        self.name = name
+        self.impact = impact  # 0-100
+        self.growth = growth  # yüzdesel
+        self.synergy = synergy  # 0-100
+        self.crisis_score = crisis_score  # 0-100
+
+def fusion_ai_decision(profiles):
+    for profile in profiles:
+        fusion_score = (
+            profile.impact * 0.4 +
+            profile.growth * 0.2 +
+            profile.synergy * 0.3 -
+            profile.crisis_score * 0.1
+        )
+        print(f"🧠 {profile.name} - Fusion Etki Skoru: {fusion_score:.2f}")
+        if fusion_score > 85:
+            print(f"✅ Stratejik Eylem Önerisi: Ortaklık genişletilsin 🔗")
+        elif fusion_score > 65:
+            print(f"⚙️ Stratejik Gelişim: Yükseltme önerilsin 📈")
+        else:
+            print(f"🛡️ Savunma stratejisi geliştirilsin 🧱")

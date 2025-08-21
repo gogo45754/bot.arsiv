@@ -1,0 +1,8 @@
+from modules.intelligence.wallet_activity_analyzer import analyze_wallet_activity
+
+with open("wallet_logs/0xABC123.json") as f:
+    data = json.load(f)
+
+report = analyze_wallet_activity("0xABC123", data)
+for line in report:
+    print(line)

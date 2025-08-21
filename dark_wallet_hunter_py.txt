@@ -1,0 +1,6 @@
+def detect_dark_wallets(chain_snapshot):
+    suspects = []
+    for wallet in chain_snapshot:
+        if wallet['activity'] < 3 and wallet['balance'] > 2_000_000:
+            suspects.append(wallet['address'])
+    return suspects

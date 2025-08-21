@@ -1,0 +1,7 @@
+symbol,tf,trades,win_rate,expectancy_R,max_drawdown,final_equity,win_rate_net,expectancy_R_net,max_drawdown_net,final_equity_net
+BTCUSDT,5m,103,34.95,0.049,,0.0,34.95,-0.509,-198.63,-0.0
+BTCUSDT,15m,96,32.29,-0.031,-100.0,0.0,32.29,-0.347,-120.31,-0.0
+ETHUSDT,5m,94,35.11,0.053,-100.0,0.0,35.11,-0.168,-120.21,-0.0
+ETHUSDT,15m,94,41.49,0.245,,0.0,41.49,0.111,-110.29,-0.0
+SOLUSDT,5m,95,40.0,0.2,,0.0,40.0,0.005,-168.49,-0.0
+SOLUSDT,15m,82,43.9,0.317,-100.0,0.0,43.9,0.194,-107.4,0.0
